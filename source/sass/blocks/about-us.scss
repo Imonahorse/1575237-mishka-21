@@ -1,7 +1,6 @@
 .about-us__title {
   margin-bottom: 82px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
+  font-family: $default-font;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
@@ -9,14 +8,14 @@
 }
 
 .about-us__list {
+  @include list-reset;
   margin-bottom: 58px;
 }
 
 .about-us__item {
   position: relative;
   margin-bottom: 83px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
+  font-family: $default-font;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
@@ -29,7 +28,7 @@
     top: -50px;
     width: 33px;
     height: 38px;
-    background-image: url("../img/icon-1.svg.svg");
+    background-image: url("../../img/icon-1.svg.svg");
     background-repeat: no-repeat;
   }
 
@@ -40,7 +39,7 @@
     top: -50px;
     width: 47px;
     height: 27px;
-    background-image: url("../img/icon-3.svg.svg");
+    background-image: url("../../img/icon-3.svg.svg");
     background-repeat: no-repeat;
   }
 
@@ -51,7 +50,7 @@
     top: -50px;
     width: 34px;
     height: 27px;
-    background-image: url("../img/icon-5.svg.svg");
+    background-image: url("../../img/icon-5.svg.svg");
     background-repeat: no-repeat;
   }
 
@@ -62,7 +61,7 @@
     top: -50px;
     width: 35px;
     height: 34px;
-    background-image: url("../img/icon-2.svg.svg");
+    background-image: url("../../img/icon-2.svg.svg");
     background-repeat: no-repeat;
   }
 
@@ -73,7 +72,7 @@
     top: -50px;
     width: 55px;
     height: 23px;
-    background-image: url("../img/icon-4.svg.svg");
+    background-image: url("../../img/icon-4.svg.svg");
     background-repeat: no-repeat;
   }
 
@@ -84,7 +83,7 @@
     top: -50px;
     width: 33px;
     height: 32px;
-    background-image: url("../img/icon-6.svg.svg");
+    background-image: url("../../img/icon-6.svg.svg");
     background-repeat: no-repeat;
   }
 }

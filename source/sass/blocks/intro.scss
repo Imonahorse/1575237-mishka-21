@@ -1,44 +1,40 @@
 
 .intro__wrapper {
   padding-top: 73px;
-  background-image: url("../img/hero-mobile 1.jpg");
+  background-image: url("../../img/hero-mobile 1.jpg");
   background-repeat: no-repeat;
 
 }
 
 .intro__slogan {
   margin-bottom: 120px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
-  color: $black;
+}
+
+.intro__list {
+  @include list-reset;
 }
 
 .intro__link {
   display: block;
-  width: 320px;
-  min-height: 103px;
   padding: 24px 160px 31px 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
   font-weight: bold;
   text-decoration: none;
   font-size: 19px;
-  line-height: 24px;
-  color: $very-light-gray;
+  color: $based-gray-1;
 
   &--interior-items {
-    background-color: $moderate-cyan;
-    background-image: url("../img/interior.svg.svg");
+    background-color: $based-cyan-2;
+    background-image: url("../../img/interior.svg.svg");
     background-repeat: no-repeat;
     background-position: 240px;
   }
 
   &--toys {
-    background-color: $dark-moderate-cyan;
-    background-image: url("../img/toy-svg.svg");
+    background-color: $based-cyan-1;
+    background-image: url("../../img/toy-svg.svg");
     background-repeat: no-repeat;
     background-position: 240px;
   }

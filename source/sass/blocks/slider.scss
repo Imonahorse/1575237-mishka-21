@@ -1,0 +1,16 @@
+.slider__item {
+  display: none;
+  margin: 0;
+
+  &--current {
+    display: block;
+  }
+}
+
+.slider__toggles {
+  display: flex;
+  margin-bottom: 38px;
+  border: 1px solid $based-gray-1;
+  background-color: $white;
+  cursor: pointer;
+}

@@ -2,15 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  min-height: 80px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid $based-gray-4;
 }
 
 .social__list {
+  @include list-reset;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 142px;
-  min-height: 28px;
+
 }

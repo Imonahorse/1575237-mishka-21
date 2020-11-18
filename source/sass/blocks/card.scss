@@ -1,0 +1,42 @@
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__status {
+  margin-bottom: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 20px;
+  color: $based-cyan-2;
+}
+
+.card__title {
+  order: -1;
+  margin: 0;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $black;
+}
+
+.card__description {
+  margin-bottom: 28px;
+  color: $based-gray-2;
+}
+
+.card__item {
+  display: flex;
+  font-size: 15px;
+  line-height: 20px;
+  color: $based-gray-2;
+  border-bottom: 1px solid $based-gray-1;
+}
+
+.card__price {
+  font-weight: bold;
+  font-size: 17px;
+  color: $based-gray-2;
+}
