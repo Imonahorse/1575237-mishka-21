@@ -1,0 +1,33 @@
+.contacts__title {
+  margin-bottom: 28px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: $black;
+}
+
+.contacts__info {
+  margin-bottom: 62px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $very-dark-gray;
+}
+
+.contacts__email,
+.contacts__address {
+  display: flex;
+}
+
+.contacts__map {
+  display: block;
+  margin-bottom: 42px;
+}
+
+.contacts__button {
+  margin-bottom: 39px;
+}

@@ -1,0 +1,37 @@
+
+.reviews__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $black;
+}
+
+.slider__item {
+  display: none;
+  margin: 0;
+
+  &--current {
+    display: block;
+  }
+}
+
+.reviews-text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: $very-dark-gray;
+}
+
+.slider__toggles {
+  display: flex;
+  margin-bottom: 38px;
+  width: 130px;
+  min-height: 52px;
+  border: 1px solid $very-light-gray;
+  background-color: white;
+  cursor: pointer;
+}
