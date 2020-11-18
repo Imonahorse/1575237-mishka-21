@@ -1,0 +1,21 @@
+.site-list {
+  @include list-reset;
+}
+
+.site-list__link {
+  font-family: inherit;
+  color: inherit;
+  display: block;
+  padding: 28px 70px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  box-shadow: 0 1px 0 $based-gray-1, inset 0 1px 0 $based-gray-1;
+}
+
+.site-list__item:nth-child(3),
+.site-list__item:nth-child(4) {
+  display: none;
+}

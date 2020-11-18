@@ -1,0 +1,14 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid $based-gray-4;
+}
+
+.social__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}

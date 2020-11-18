@@ -1,0 +1,89 @@
+.about-us__title {
+  margin-bottom: 82px;
+  font-family: $default-font;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $black;
+}
+
+.about-us__list {
+  @include list-reset;
+  margin-bottom: 58px;
+}
+
+.about-us__item {
+  position: relative;
+  margin-bottom: 83px;
+  font-family: $default-font;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $black;
+
+  &--eco::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: -50px;
+    width: 33px;
+    height: 38px;
+    background-image: url("../../img/icon-1.svg.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--price::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: -50px;
+    width: 47px;
+    height: 27px;
+    background-image: url("../../img/icon-3.svg.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--like::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: -50px;
+    width: 34px;
+    height: 27px;
+    background-image: url("../../img/icon-5.svg.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--quality::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: -50px;
+    width: 35px;
+    height: 34px;
+    background-image: url("../../img/icon-2.svg.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--country::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: -50px;
+    width: 55px;
+    height: 23px;
+    background-image: url("../../img/icon-4.svg.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--packaging::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: -50px;
+    width: 33px;
+    height: 32px;
+    background-image: url("../../img/icon-6.svg.svg");
+    background-repeat: no-repeat;
+  }
+}
