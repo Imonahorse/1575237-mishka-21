@@ -1,0 +1,19 @@
+.catalog__title {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  background-color: $based-gray-3;
+}
+
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+}
+
+.product-card__price {
+  font-weight: bold;
+}
