@@ -14,8 +14,8 @@
 }
 
 .modal__list {
-  display: flex;
   @include list-reset;
+  display: flex;
 }
 
 .modal__label {
