@@ -1,0 +1,53 @@
+.form__title {
+  background-color: $based-gray-3;
+  margin-bottom: 17px;
+}
+
+.form__description {
+  font-size: 13px;
+  color: $based-gray-2;
+  margin-bottom: 25px;
+}
+
+.form__fieldset {
+  border: none;
+}
+
+.form__legend {
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $based-cyan-2;
+}
+
+.form__list {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  @include list-reset;
+}
+
+.form__item {
+  margin-bottom: 30px;
+}
+
+.form__note {
+  font-size: 14px;
+  line-height: 16px;
+  color: $based-gray-2;
+}
+
+.text-input__input {
+  border: none;
+  border-bottom: 2px solid $black;
+}
+
+.text-input__label {
+  &--tel,
+  &--email,
+  &--textarea {
+    color: $based-cyan-2;
+  }
+}

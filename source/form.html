@@ -4,6 +4,10 @@
 <head>
 
   <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Мишка</title>
 
 </head>
@@ -11,31 +15,31 @@
 <body class="page__body">
 
 <header class="page-header">
-  <a class="page-header__logo">
-    <img src="https://via.placeholder.com/86x36" width="86" height="36" alt="Логотип сайта Мишка">
-  </a>
   <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
     <div class="main-nav__wrapper">
+      <button class="main-nav__toggle button" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <a class="page-header__logo" href="index.html">
+        <img src="https://via.placeholder.com/86x36" width="86" height="36" alt="Логотип сайта Мишка">
+      </a>
       <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+        </li>
         <li class="site-list__item site-list__item-active">
-          <a href="catalog.html">Каталог товаров</a>
+          <a class="site-list__link" href="form.html">Вязание на заказ</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Вязание на заказ</a>
+          <a class="site-list__link" href="#">Новые поступления</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Новые поступления</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">Распродажа</a>
+          <a class="site-list__link" href="#">Распродажа</a>
         </li>
       </ul>
       <div class="main-nav__list user-list">
-        <a href="" class="user-list__item">Поиск по сайту</a>
-        <a href="" class="user-list__item">Корзина: пока пуста</a>
+        <a href="" class="user-list__link">Поиск по сайту</a>
+        <a href="" class="user-list__link">Корзина: пока пуста</a>
       </div>
       <p class="main-nav__delivery-info">Бесплатная доставка по России</p>
     </div>
@@ -46,12 +50,12 @@
 
   <section class="form">
     <div class="form__wrapper">
-      <h1 class="form__title">Вязание на зказ</h1>
+      <h1 class="form__title">Вязание на заказ</h1>
       <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
         детали.</p>
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form__fieldset">
-          <legend class="form__title">Тип</legend>
+          <legend class="form__legend">Тип</legend>
           <ul class="form__list form__list--radio">
             <li class="form__item radio">
               <label class="radio__label">
@@ -67,7 +71,7 @@
         </fieldset>
 
         <fieldset class="form__fieldset">
-          <legend class="form__title">Цвет</legend>
+          <legend class="form__legend">Цвет</legend>
           <ul class="form__list form__list--checkbox">
             <li class="form__item checkbox">
               <label class="checkbox__label">
@@ -103,7 +107,7 @@
         </fieldset>
 
         <fieldset class="form__fieldset">
-          <legend class="form__title">ФИО</legend>
+          <legend class="form__legend">ФИО</legend>
           <ul class="form__list form__list--text-field">
             <li class="form__item text-input">
               <label class="text-input__label">Имя:
@@ -128,13 +132,13 @@
           <ul class="form__list form__list--text-field">
             <li class="form__item text-input">
               <label class="text-input__label text-input__label--tel">Тел
-                <input class="text__input" type="tel" name="tel" pattern="\+7\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" placeholder="+7 XXX XXX XX XX*"
+                <input class="text-input__input" type="tel" name="tel" pattern="\+7\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" placeholder="+7 XXX XXX XX XX*"
                        required>
               </label>
             </li>
             <li class="form__item text-input">
               <label class="form__label text-input__label--email">E-mail
-                <input class="text-input" type="email" name="e-mail" placeholder="Ваш Email*" required>
+                <input class="text-input__input" type="email" name="e-mail" placeholder="Ваш Email*" required>
               </label>
             </li>
             <li class="form__item text-input">
@@ -147,7 +151,7 @@
 
         <p class="form__note">*Поля обязательны для заполнения</p>
 
-        <button class="form__button button" type="submit">Отправить заказ</button>
+        <button class="form__button button button--primary" type="submit">Отправить заказ</button>
 
       </form>
     </div>
