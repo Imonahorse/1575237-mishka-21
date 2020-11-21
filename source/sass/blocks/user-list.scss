@@ -1,11 +1,25 @@
+.user-list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    grid-column: 3/5;
+    grid-row: 1/2;
+  }
+  @media (min-width: $desktop-width) {
+    grid-column: 5/7;
+    grid-row: 1/2;
+  }
+}
 
 .user-list__link {
   font-family: inherit;
   color: inherit;
   display: block;
-  padding: 28px 70px;
+  padding: 28px 35px;
   min-height: 79px;
-  text-align: center;
   font-weight: bold;
   font-size: 17px;
   text-decoration: none;

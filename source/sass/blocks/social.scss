@@ -1,7 +1,4 @@
 .social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-bottom: 1px solid $based-gray-4;
 }
 
@@ -10,4 +7,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
