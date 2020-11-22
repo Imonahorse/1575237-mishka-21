@@ -1,5 +1,4 @@
 .main-nav__wrapper {
-  width: 320px;
   padding: 0 30px;
   margin: 0 auto;
   display: flex;
@@ -26,6 +25,7 @@
 
 .main-nav__logo {
   display: inline-flex;
+  justify-content: center;
   padding: 20px 85px;
 
   @media (min-width: $tablet-width) {

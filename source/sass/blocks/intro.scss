@@ -1,13 +1,13 @@
 .intro__wrapper {
-  width: 320px;
-  padding: 73px 30px 0 30px;
+  padding: 0 30px;
   margin: 0 auto;
   background-image: url("../../img/hero-mobile 1.jpg");
   background-repeat: no-repeat;
+  background-position: top;
+  background-color: #fafafa;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    padding: 155px 50px 0 50px;
+    padding: 0 50px;
     margin: 0 auto;
     background-image: url("../../img/hero-desktop 2.jpg");
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1150px;
-    padding: 155px 50px 0 50px;
+    padding: 0 50px;
     margin: 0 auto;
     background-image: url("../../img/hero-desktop 1.jpg");
     background-repeat: no-repeat;
@@ -23,13 +23,17 @@
 }
 
 .intro__slogan {
-  margin-bottom: 120px;
+  width: 260px;
+  padding-top: 73px;
+  margin: 0 auto 120px auto;
   text-align: center;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
+    width: 668px;
+    padding-top: 155px;
     margin-bottom: 372px;
     font-size: 43px;
     line-height: 50px;
@@ -49,20 +53,37 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    width: 100%;
+  }
+}
+
+.intro__item {
+  display: flex;
+  justify-content: center;
+  margin: 0 -30px;
+
+  &--interior-color {
+    background-color: $based-cyan-2;
+  }
+
+  &--toys-color {
+    background-color: $based-cyan-1;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    margin: 0;
   }
 }
 
 .intro__link {
   display: block;
-  padding: 24px 0px;
+  padding: 24px 0;
   font-weight: bold;
   text-decoration: none;
   font-size: 19px;
   color: $based-gray-1;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 167px 34px 36px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -75,17 +96,15 @@
 
 
   &--interior-items {
-    background-color: $based-cyan-2;
     background-image: url("../../img/interior.svg.svg");
     background-repeat: no-repeat;
     background-position: 205px;
   }
 
   &--toys {
-    background-color: $based-cyan-1;
     background-image: url("../../img/toy-svg.svg");
     background-repeat: no-repeat;
-    background-position: 205px;
+    background-position: 200px;
   }
 
 }

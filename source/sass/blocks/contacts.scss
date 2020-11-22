@@ -1,10 +1,8 @@
 .contacts__wrapper {
-  width: 320px;
   padding: 0 30px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     padding: 0 50px;
     margin: 0 auto;
   }
@@ -42,8 +40,10 @@
 }
 
 .contacts__info {
-  margin-bottom: 62px;
+  @include list-reset;
+  font-size: 14px;
   line-height: 30px;
+  margin-bottom: 62px;
   color: $based-gray-2;
 
   @media (min-width: $tablet-width) {
@@ -64,8 +64,13 @@
   display: flex;
 }
 
+.contacts__term {
+  width: 50%;
+}
+
 .contacts__map {
   display: block;
+  margin: 0 -30px;
   margin-bottom: 42px;
 
   @media (min-width: $desktop-width) {

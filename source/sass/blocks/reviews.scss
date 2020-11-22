@@ -1,10 +1,8 @@
 .reviews__wrapper {
-  width: 320px;
   padding: 0 30px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     padding: 0 50px;
     margin: 0 auto;
     display: grid;
@@ -13,7 +11,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1150px;
     padding: 0 50px;
     margin: 0 auto;
   }
@@ -40,10 +37,26 @@
   }
 }
 
+.reviews__item,
+.reviews__author-address,
+.reviews__text {
+  @include list-reset;
+}
+
+.reviews__list {
+  margin-bottom: 33px;
+}
+
 .reviews__text {
   line-height: 30px;
   color: $based-gray-2;
+  margin-bottom: 33px;
+}
 
+.reviews__author-name {
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .reviews__button {
@@ -53,9 +66,3 @@
   }
 }
 
-.reviews__toggles {
-  @media (min-width: $tablet-width) {
-    grid-column: 4/5;
-    grid-row: 3/4;
-  }
-}

@@ -10,7 +10,14 @@
 .slider__toggles {
   display: flex;
   margin-bottom: 38px;
-  border: 1px solid $based-gray-1;
-  background-color: $white;
-  cursor: pointer;
+  @media (min-width: $tablet-width) {
+    grid-column: 4/5;
+    grid-row: 3/4;
+  }
+}
+
+.slider__button {
+  display: block;
+  padding: 13px 42px 13px 38px;
+  border: 1px solid #ececec;
 }

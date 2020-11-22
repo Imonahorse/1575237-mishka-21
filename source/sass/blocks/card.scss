@@ -35,7 +35,6 @@
 }
 
 .card__title {
-  order: -1;
   margin: 0;
   font-weight: bold;
   font-size: 25px;
@@ -56,7 +55,7 @@
 }
 
 .card__description {
-  margin-bottom: 28px;
+  margin: 0 0 28px 0;
   color: $based-gray-2;
 
   @media (min-width: $tablet-width) {
@@ -72,6 +71,9 @@
 }
 
 .card__list {
+  @include list-reset;
+  padding-bottom: 28px;
+
   @media (min-width: $tablet-width) {
     grid-column: 1/3;
     grid-row: 3/4;
@@ -88,9 +90,20 @@
   line-height: 20px;
   color: $based-gray-2;
   border-bottom: 1px solid $based-gray-1;
+  min-height: 20px;
+}
+
+.card__term {
+  width: 20%;
+}
+
+.card__term,
+.card__definition {
+  padding: 16px 0;
 }
 
 .card__price {
+  text-align: center;
   font-weight: bold;
   font-size: 17px;
   color: $based-gray-2;
