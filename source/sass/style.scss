@@ -1,6 +1,8 @@
 @import "base/normalize.scss";
 @import "base/fonts.scss";
 @import "base/variables.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/button.scss";
 @import "base/global.scss";
 @import "base/mixins.scss";
 @import "blocks/main-nav.scss";
@@ -11,7 +13,6 @@
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
-@import "blocks/button.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
@@ -26,4 +27,3 @@
 @import "blocks/production.scss";
 @import "blocks/promo-product.scss";
 @import "blocks/slider.scss";
-@import "blocks/wrapper.scss";

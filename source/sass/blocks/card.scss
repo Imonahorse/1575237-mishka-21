@@ -1,21 +1,22 @@
 .card {
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 42px;
-    position: relative;
     padding-top: 40px;
-    padding-bottom: 52px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 175px;
-    padding-top: 54px;
     grid-column-gap: 58px;
+    padding-top: 54px;
     padding-bottom: 73px;
+    padding-left: 255px;
   }
 }
 
@@ -29,19 +30,19 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 5px;
-    right: 20px;
+    right: 0;
+    margin: 0;
     width: 100px;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    top: 60px;
-    left: 0;
+    left: -250px;
   }
 }
 
 .card__title {
+  position: relative;
   margin: 0;
   font-weight: bold;
   font-size: 25px;
@@ -71,6 +72,7 @@
     line-height: 30px;
     margin-bottom: 48px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 60px;
   }
@@ -82,9 +84,9 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
-    margint-bottom: 57px;
-
+    margin-bottom: 57px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 109px;
   }
@@ -92,6 +94,7 @@
 
 .card__item {
   display: flex;
+  padding: 16px 0;
   font-size: 15px;
   line-height: 20px;
   color: $based-gray-2;
@@ -101,11 +104,6 @@
 
 .card__term {
   width: 20%;
-}
-
-.card__term,
-.card__definition {
-  padding: 16px 0;
 }
 
 .card__price {
@@ -122,30 +120,27 @@
     line-height: 24px;
     margin-bottom: 33px;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .card__button {
+  width: 260px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
-
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
 .card__picture {
   margin-bottom: 25px;
+  width: 100%;
+  height: 260px;
+
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
     grid-row: 2/6;
-    width: 100%;
     height: 100%;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

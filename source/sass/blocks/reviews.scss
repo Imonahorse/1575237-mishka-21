@@ -1,8 +1,12 @@
-.contacts {
-  padding-top: 80px;
-  padding-bottom: 70px;
-}
+.reviews {
+  padding-top: 58px;
+  padding-bottom: 45px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
 
 .reviews__wrapper {
   position: relative;
@@ -19,22 +23,25 @@
 }
 
 .reviews__title {
+  margin: 0 0 15px 0;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    order: 1;
+    order: -2;
     font-size: 43px;
     line-height: 50px;
-    margin-right: auto;
+    margin: 0 auto 35px 0;
+    width: 60%;
   }
 }
 
 .reviews__list {
+  margin-bottom: 33px;
+
   @media (min-width: $tablet-width) {
     font-size: 17px;
-    order: 3;
   }
 }
 
@@ -42,10 +49,6 @@
 .reviews__author-address,
 .reviews__text {
   @include list-reset;
-}
-
-.reviews__list {
-  margin-bottom: 33px;
 }
 
 .reviews__text {
@@ -61,18 +64,24 @@
 }
 
 .reviews__button {
+  width: 260px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
-    order: 2;
+    margin: 0;
+    order: -1;
   }
 }
 
 .reviews__toggles {
+  width: 260px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
+    margin: 0;
     position: absolute;
-    top: 75%;
-    left: 65%;
+    bottom: 5px;
+    right: 5px;
     border: none;
-    order: 4;
   }
 }
-

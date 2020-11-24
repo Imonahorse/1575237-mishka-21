@@ -1,12 +1,20 @@
-.about-us__wrapper {
+.about-us {
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 80px;
+  }
 
   @media (min-width: $desktop-width) {
-    padding: 0 50px 0 225px;
+    padding-top: 68px;
+    padding-bottom: 90px;
+    padding-left: 255px;
   }
 }
 
 .about-us__title {
-  margin-bottom: 82px;
+  margin: 0 0 82px 0;
   font-family: $default-font;
   font-weight: bold;
   font-size: 25px;
@@ -26,12 +34,12 @@
 
 .about-us__list {
   @include list-reset;
-  margin-bottom: 58px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  @media (min-width: $tablet-width) {
-    width: 100%;
+
+  :last-child {
+    margin: 0;
   }
 }
 
@@ -44,47 +52,53 @@
   line-height: 20px;
   color: $black;
 
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
-    width: 50%;
-    margin-rigth: 80px;
+    width: 250px;
+    margin-right: 80px;
+    margin-bottom: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 120px;
     margin-bottom: 110px;
   }
 
   &--eco {
     @media (min-width: $tablet-width) {
-
+      order: 1;
     }
   }
 
   &--price {
     @media (min-width: $tablet-width) {
-
+      order: 3;
     }
   }
 
   &--like {
     @media (min-width: $tablet-width) {
-
+      order: 5;
     }
   }
 
   &--quality {
     @media (min-width: $tablet-width) {
-
+      order: 2;
     }
   }
 
   &--country {
     @media (min-width: $tablet-width) {
-
+      order: 4;
     }
   }
 
   &--packaging {
     @media (min-width: $tablet-width) {
-
+      order: 6;
     }
   }
 }

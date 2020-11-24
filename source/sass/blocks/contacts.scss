@@ -1,6 +1,13 @@
+.contacts {
+  padding-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 255px;
+  }
+}
+
 
 .contacts__wrapper {
-
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -8,15 +15,15 @@
   }
 }
 
-
 .contacts__title {
-  margin-bottom: 28px;
+  margin: 0 0 28px 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   color: $black;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 50px 0;
     font-size: 43px;
     line-height: 50px;
   }
@@ -44,7 +51,6 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-column: 1/2;
-
   }
 }
 
@@ -67,12 +73,14 @@
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
     grid-row: 1/4;
+    height: 100%;
   }
 }
 
 .contacts__button {
   width: 230px;
   margin: 0 auto;
+
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
     align-self: flex-start;
