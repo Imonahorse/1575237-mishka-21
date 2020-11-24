@@ -1,17 +1,5 @@
 .promo-product__wrapper {
-  padding: 0 30px;
   padding-top: 31px;
   padding-bottom: 76px;
-  margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 50px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1150px;
-    padding: 0 50px;
-    margin: 0 auto;
-  }
 }

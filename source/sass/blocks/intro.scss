@@ -1,38 +1,30 @@
 .intro__wrapper {
-  padding: 0 30px;
-  margin: 0 auto;
   background-image: url("../../img/hero-mobile 1.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-color: #fafafa;
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
-    margin: 0 auto;
     background-image: url("../../img/hero-desktop 2.jpg");
     background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1150px;
-    padding: 0 50px;
-    margin: 0 auto;
     background-image: url("../../img/hero-desktop 1.jpg");
     background-repeat: no-repeat;
+    background-color: #fafafa;
   }
 }
 
 .intro__slogan {
-  width: 260px;
   padding-top: 73px;
-  margin: 0 auto 120px auto;
+  margin: 0 0 120px 0;
   text-align: center;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    width: 668px;
     padding-top: 155px;
     margin-bottom: 372px;
     font-size: 43px;
