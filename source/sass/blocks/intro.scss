@@ -1,40 +1,94 @@
+.intro {
+  background-color: #fafafa;
+}
 
 .intro__wrapper {
-  padding-top: 73px;
   background-image: url("../../img/hero-mobile 1.jpg");
   background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 73px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/hero-desktop 2.jpg");
+    background-repeat: no-repeat;
+    padding-top: 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/hero-desktop 1.jpg");
+    background-repeat: no-repeat;
+  }
 }
 
 .intro__slogan {
-  margin-bottom: 120px;
+  margin: 0 0 120px 0;
+  text-align: center;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 372px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 355px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .intro__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.intro__item {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .intro__link {
   display: block;
-  padding: 24px 160px 31px 30px;
+  padding: 24px 0 24px 30px;
   font-weight: bold;
   text-decoration: none;
   font-size: 19px;
   color: $based-gray-1;
+  margin: 0 -30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 350px 32px 37px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
 
   &--interior-items {
     background-color: $based-cyan-2;
     background-image: url("../../img/interior.svg.svg");
     background-repeat: no-repeat;
-    background-position: 240px;
+    background-position: 205px;
   }
 
   &--toys {
     background-color: $based-cyan-1;
     background-image: url("../../img/toy-svg.svg");
     background-repeat: no-repeat;
-    background-position: 240px;
+    background-position: 200px;
   }
 }

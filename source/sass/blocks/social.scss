@@ -1,13 +1,18 @@
 .social {
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 25px 60px;
   border-bottom: 1px solid $based-gray-4;
 }
 
 .social__list {
   @include list-reset;
+  width: 140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.social__item {
+  text-align: center;
 }

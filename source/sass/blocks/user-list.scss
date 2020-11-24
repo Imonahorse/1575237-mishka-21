@@ -1,13 +1,33 @@
+.user-list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    order: -1;
+    grid-column: 2/4;
+
+    :nth-child(2) {
+      padding: 20px 0 20px 55px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 5/7;
+    grid-row: 1/2;
+  }
+}
 
 .user-list__link {
   font-family: inherit;
   color: inherit;
   display: block;
-  padding: 28px 70px;
-  min-height: 79px;
+  padding: 28px 40px;
   text-align: center;
   font-weight: bold;
   font-size: 17px;
   text-decoration: none;
+  margin: 0 -30px;
   box-shadow: 0 1px 0 $based-gray-1, inset 0 1px 0 $based-gray-1;
 }
