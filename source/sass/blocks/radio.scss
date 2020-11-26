@@ -1,0 +1,28 @@
+.radio__label {
+  position: relative;
+  padding-left: 60px;
+  display: block;
+}
+
+.radio__span::before {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 0;
+  top: -8px;
+  background: transparent;
+  border: 2px solid $black;
+  border-radius: 50%;
+}
+
+input:checked + .radio__span::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 12px;
+  top: 4px;
+  background: $based-cyan-3;
+  border-radius: 50%;
+}

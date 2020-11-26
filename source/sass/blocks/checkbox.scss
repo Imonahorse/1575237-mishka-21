@@ -1,0 +1,27 @@
+.checkbox {
+  width: 250px;
+}
+
+.checkbox__span::before {
+  content: "";
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  left: 0;
+  top: -8px;
+  background: transparent;
+  border: 2px solid $black;
+}
+
+input:checked + .checkbox__span::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 13px;
+  left: 6px;
+  top: 0;
+  background: transparent;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  transform: rotate(-45deg);
+}

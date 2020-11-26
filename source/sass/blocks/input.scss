@@ -1,34 +1,70 @@
-.text-input {
-  &__input {
-    font-family: inherit;
-    border: none;
-    border-bottom: 2px solid $black;
+.text-input__input {
+  font-family: inherit;
+  border: none;
+  border-bottom: 2px solid $black;
+  display: block;
+  width: 100%;
+  height: 52px;
+  background: transparent;
 
-    ::placeholder {
-      font-size: 17px;
-      line-height: 18px;
-      color: $black;
-      opacity: 0.3;
-    }
-  }
-
-  &__textarea {
-    border: 2px solid $black;
-  }
-
-  ::placeholder {
+  &::placeholder {
     font-size: 17px;
     line-height: 18px;
-    color: $black;
     opacity: 0.3;
+    color: $black;
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 19px;
+    }
+  }
+}
+
+.text-input__textarea {
+  width: 100%;
+  border: 2px solid $black;
+  display: block;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    opacity: 0.3;
+    color: $black;
+    padding: 17px 17px 0 17px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 19px;
+    }
   }
 }
 
 .text-input__label {
+
   &--tel,
   &--email,
   &--textarea {
     color: $based-cyan-2;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: center;
+    }
   }
 }
+
+.text-input__span {
+
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
+
+    &--tel,
+    &--email,
+    &--textarea {
+      width: 80px;
+      margin-right: 100px;
+    }
+  }
+}
+
