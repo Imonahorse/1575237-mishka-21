@@ -6,15 +6,13 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
-    display: grid;
-    grid-template-columns: (321*100%/768) (82*100%/768) (264*100%/768);
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 50px;
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto auto auto min-content min-content;
   }
 }
 
@@ -24,15 +22,10 @@
   padding: 20px 85px;
 
   @media (min-width: $tablet-width) {
-    order: -2;
-    grid-column: 1/2;
-    padding: 20px 190px 20px 0;
+    width: 50%;
+    display: block;
+    padding-left: 0;
     box-shadow: 0 1px 0 $based-gray-1, inset 0 1px 0 $based-gray-1;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 3/4;
-    grid-row: 1/2;
   }
 }
 

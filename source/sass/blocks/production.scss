@@ -1,11 +1,88 @@
+.production {
+  padding-bottom: 40px;
+}
+
+.production__wrapper {
+  border: 1px solid #ececec;
+  padding-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 80px;
+    padding-bottom: 0;
+    padding-right: 50px;
+  }
+}
+
 .production__title {
+  @include list-reset;
+  padding: 21px 13px 26px 91px;
   font-weight: bold;
   font-size: 17px;
-  margin-bottom: 26px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 20px;
+  }
 }
 
 .production__description {
+  @include list-reset;
   font-size: 13px;
   color: $based-gray-2;
-  margin-bottom: 59px;
+  padding: 0 34px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    padding: 0;
+  }
+}
+
+.production__player {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/5;
+    margin-bottom: 0;
+  }
+}
+
+.prescription__button {
+  padding-left: 34px;
+  padding-right: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+  }
+}
+
+.production__video {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 455px;
+  }
 }

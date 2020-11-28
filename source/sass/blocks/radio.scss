@@ -12,11 +12,11 @@
   left: 0;
   top: -8px;
   background: transparent;
-  border: 2px solid $black;
+  border: 2px solid $based-gray-2;
   border-radius: 50%;
 }
 
-input:checked + .radio__span::after {
+.radio__input:checked + .radio__span::after {
   content: "";
   position: absolute;
   width: 18px;
