@@ -1,10 +1,25 @@
-.catalog__wrapper {
+.catalog {
   padding-top: 30px;
   padding-bottom: 50px;
 }
 
-.catalog__card {
+.catalog__list {
+  @include list-reset;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 57px;
+  }
+}
+
+.catalog__item {
   margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
@@ -12,26 +27,6 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-  }
-}
-
-.catalog__list {
-  @include list-reset;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    gap: 50px;
-  }
-}
-
-.catalog__item {
-  margin-bottom: 30px;
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
-  }
-
-  .product-card__price {
-    font-weight: bold;
+    min-height: 659px;
   }
 }

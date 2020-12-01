@@ -1,10 +1,9 @@
 .production {
-  padding-bottom: 40px;
+  padding-bottom: 58px;
 }
 
 .production__wrapper {
   border: 1px solid #ececec;
-  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -13,23 +12,43 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 682px 1fr;
     column-gap: 80px;
     padding-bottom: 0;
     padding-right: 50px;
   }
 }
 
+.production__icon {
+  position: absolute;
+  top: 35px;
+  left: 40px;
+
+  @media (min-width: $desktop-width) {
+    left: 0;
+  }
+}
+
 .production__title {
   @include list-reset;
+  position: relative;
+  width: 156px;
   padding: 21px 13px 26px 91px;
   font-weight: bold;
   font-size: 17px;
-  text-align: center;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
+    width: 400px;
+    padding-top: 40px;
     text-align: left;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 96px;
+    padding-left: 0;
+    width: 180px;
   }
 }
 
@@ -37,52 +56,48 @@
   @include list-reset;
   font-size: 13px;
   color: $based-gray-2;
-  padding: 0 34px;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: 2/3;
-    padding: 0;
   }
 }
 
 .production__player {
-  margin-bottom: 35px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     order: -1;
   }
 
   @media (min-width: $desktop-width) {
-    grid-row: 1/5;
     margin-bottom: 0;
+    grid-row: 1/3;
   }
 }
 
-.prescription__button {
-  padding-left: 34px;
-  padding-right: 34px;
+.production__player-button {
+  position: absolute;
+}
 
-  @media (min-width: $tablet-width) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
 
-  @media (min-width: $desktop-width) {
-    grid-column: 2/3;
-  }
+.production__button {
+  display: block;
 }
 
 .production__video {
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    height: 455px;
+  display: block;
+  width: 100%;
+}
+
+.production__info {
+  padding-top: 35px;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 34px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
