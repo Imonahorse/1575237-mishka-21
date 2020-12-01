@@ -46,11 +46,15 @@
 
 <main class="page-main">
 
+  <section class="form-intro">
+    <h1 class="form-intro__title">Вязание на заказ</h1>
+    <p class="form-intro__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,
+      чтобы уточнить детали.</p>
+  </section>
+
   <section class="form">
+    <h2 class="visually-hidden">Форма заказа</h2>
     <div class="form__wrapper wrapper">
-      <h1 class="form__title">Вязание на заказ</h1>
-      <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
-        детали.</p>
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form__fieldset">
           <div class="form__fieldset-wrapper">
@@ -58,13 +62,13 @@
             <ul class="form__list form__list--radio">
               <li class="form__item radio">
                 <label class="radio__label">
-                  <input class="visually-hidden" type="radio" name="type" value="accessory" checked>
+                  <input class="radio__input visually-hidden" type="radio" name="type" value="accessory" checked>
                   <span class="radio__span">Аксессуар для интерьера</span>
                 </label>
               </li>
               <li class="form__item radio">
                 <label class="radio__label">
-                  <input class="visually-hidden" type="radio" name="type" value="toy">
+                  <input class="radio__input visually-hidden" type="radio" name="type" value="toy">
                   <span class="radio__span">Детская игрушка</span>
                 </label>
               </li>
@@ -78,37 +82,37 @@
             <ul class="form__list form__list--checkbox">
               <li class="form__item checkbox">
                 <label class="checkbox__label">
-                  <input class="visually-hidden" type="checkbox" name="color" value="white" checked>
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="color" value="white" checked>
                   <span class="checkbox__span">Белый</span>
                 </label>
               </li>
               <li class="form__item checkbox">
                 <label class="checkbox__label">
-                  <input class="visually-hidden" type="checkbox" name="color" value="gray" checked>
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="color" value="gray" checked>
                   <span class="checkbox__span">Серый</span>
                 </label>
               </li>
               <li class="form__item checkbox">
                 <label class="checkbox__label">
-                  <input class="visually-hidden" type="checkbox" name="color" value="tiffany">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="color" value="tiffany">
                   <span class="checkbox__span">«Тиффани»</span>
                 </label>
               </li>
               <li class="form__item checkbox">
                 <label class="checkbox__label">
-                  <input class="visually-hidden" type="checkbox" name="color" value="black">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="color" value="black">
                   <span class="checkbox__span">Черный</span>
                 </label>
               </li>
               <li class="form__item checkbox">
                 <label class="checkbox__label">
-                  <input class="visually-hidden" type="checkbox" name="color" value="pink">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="color" value="pink">
                   <span class="checkbox__span">Розовый</span>
                 </label>
               </li>
               <li class="form__item checkbox">
                 <label class="checkbox__label">
-                  <input class="visually-hidden" type="checkbox" name="color" value="orange">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="color" value="orange">
                   <span class="checkbox__span">Оранжевый</span>
                 </label>
               </li>
@@ -149,8 +153,7 @@
               <li class="form__item text-input">
                 <label class="text-input__label text-input__label--tel">
                   <span class="text-input__span--tel">Тел</span>
-                  <input class="text-input__input" type="tel" name="tel" pattern="\+7\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}"
-                         placeholder="+7 XXX XXX XX XX*" required>
+                  <input class="text-input__input" type="tel" name="tel" pattern="\+7\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" placeholder="+7 XXX XXX XX XX*" required>
                 </label>
               </li>
               <li class="form__item text-input">
