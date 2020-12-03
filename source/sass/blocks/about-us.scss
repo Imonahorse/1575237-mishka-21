@@ -9,8 +9,11 @@
   @media (min-width: $desktop-width) {
     padding-top: 68px;
     padding-bottom: 90px;
-    padding-left: 255px;
   }
+}
+
+.about-us__wrapper {
+  padding-left: 255px;
 }
 
 .about-us__title {
@@ -51,6 +54,45 @@
   font-size: 17px;
   line-height: 20px;
   color: $black;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 38px;
+    top: -50px;
+    left: 0;
+  }
+
+  &--eco::after {
+    background: url("../../img/icon-flower.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--price::after {
+    background: url("../../img/icon-money.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--like::after {
+    background: url("../../img/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--quality::after {
+    background: url("../../img/icon-ball.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--country::after {
+    background: url("../../img/icon-rocket.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--packaging::after {
+    background: url("../../img/icon-gift.svg");
+    background-repeat: no-repeat;
+  }
 
 
   @media (min-width: $tablet-width) {

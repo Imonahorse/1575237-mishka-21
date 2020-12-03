@@ -18,7 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 175px;
+    padding-left: 255px;
   }
 }
 
@@ -34,6 +34,10 @@
     line-height: 50px;
     margin: 0 auto 35px 0;
     width: 60%;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 53px;
   }
 }
 
@@ -66,6 +70,7 @@
 .reviews__button {
   width: 260px;
   margin: 0 auto;
+  display: block;
 
   @media (min-width: $tablet-width) {
     margin: 0;

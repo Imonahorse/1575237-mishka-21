@@ -1,36 +1,59 @@
 .intro {
   background-color: #fafafa;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -75px;
+  }
 }
 
 .intro__wrapper {
-  background-image: url("../../img/hero-mobile 1.jpg");
+  background-image: url("../../img/intro-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
   padding-top: 73px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/intro-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/hero-desktop 2.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../../img/intro-tablet@1x.jpg");
     padding-top: 155px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/intro-desktop@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/hero-desktop 1.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../../img/intro-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/intro-desktop@2x.jpg");
+      background-size: 1050px auto;
+    }
   }
 }
 
 .intro__slogan {
-  margin: 0 0 120px 0;
+  margin: 0 auto 120px auto;
   text-align: center;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
+  width: 278px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 372px;
     font-size: 43px;
     line-height: 50px;
+    width: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,14 +103,20 @@
 
   &--interior-items {
     background-color: $based-cyan-2;
-    background-image: url("../../img/interior.svg.svg");
-    background-repeat: no-repeat;
-    background-position: 205px;
+
+    &::after {
+      content: "";
+      background-image: url("../../img/interior.svg");
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 62px;
+      background-position: center;
+    }
   }
 
   &--toys {
     background-color: $based-cyan-1;
-    background-image: url("../../img/toy-svg.svg");
+    background-image: url("../../img/toy.svg");
     background-repeat: no-repeat;
     background-position: 200px;
   }

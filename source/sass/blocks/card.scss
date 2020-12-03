@@ -31,6 +31,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     right: 0;
+    top: 10px;
     margin: 0;
     width: 100px;
     text-align: center;
@@ -125,6 +126,7 @@
 .card__button {
   width: 260px;
   margin: 0 auto;
+  display: block;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
