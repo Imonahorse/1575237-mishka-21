@@ -11,15 +11,19 @@
 <body class="page__body">
 
 <header class="page-header">
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--closed main-nav--nojs">
     <div class="main-nav__wrapper wrapper">
       <button class="main-nav__toggle button" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="visually-hidden">Закрыть меню</span>
       </button>
       <a class="main-nav__logo">
-        <img src="./img/mishka-logo-mobile.svg.svg" alt="Логотип сайта Мишка" width="86" height="35">
+        <picture>
+          <source media="(min-width:1150px)" srcset="img/mishka-logo-desktop.svg">
+          <source media="(min-width:768px)" srcset="img/mishka-logo-tablet.svg">
+          <img src="img/mishka-logo-mobile.svg" alt="Логотип сайта Мишка">
+        </picture>
       </a>
-      <ul class="main-nav__list site-list">
+      <ul class="main-nav__site-list site-list">
         <li class="site-list__item site-list__item-active">
           <a class="site-list__link" href="catalog.html">Каталог товаров</a>
         </li>
@@ -33,10 +37,24 @@
           <a class="site-list__link" href="#">Распродажа</a>
         </li>
       </ul>
-      <div class="main-nav__list user-list">
-        <a href="" class="user-list__link">Поиск по сайту</a>
-        <a href="" class="user-list__link">Корзина: пока пуста</a>
-      </div>
+      <ul class="main-nav__user-list user-list">
+        <li class="user-list__item">
+          <a href="" class="user-list__link user-list__link--search">
+            <img src="img/search.svg" alt="">
+            <span>Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="user-list__item">
+          <a href="" class="user-list__link user-list__link--basket">
+            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.2"
+                    d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z"
+                    fill="black"/>
+            </svg>
+            Корзина: пока пуста
+          </a>
+        </li>
+      </ul>
       <p class="main-nav__delivery-info">Бесплатная доставка по России</p>
     </div>
   </nav>
@@ -50,10 +68,14 @@
       <p class="intro__slogan">Милые штуки ручной работы&nbsp;для&nbsp;дома</p>
       <ul class="intro__list">
         <li class="intro__item">
-          <a class="intro__link intro__link--interior-items" href="#">Предметы<br> интерьера</a>
+          <a class="intro__link intro__link--interior-items" href="#">
+            <span>Предметы<br> интерьера</span>
+          </a>
         </li>
         <li class="intro__item">
-          <a class="intro__link intro__link--toys" href="#">Детские<br> игрушки</a>
+          <a class="intro__link intro__link--toys" href="#">
+            <span>Детские<br> игрушки</span>
+          </a>
         </li>
       </ul>
     </div>
@@ -81,7 +103,14 @@
             <dd class="card__definition">15см</dd>
           </div>
         </dl>
-        <img class="card__picture" src="img/triple-set-mobile%201.jpg" width="260" height="315" alt="Разноцветные вязанные карзинки ручной работы разных размеров">
+        <div class="card__picture-wrapper">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/triple-set-tablet@1x.jpg 1x,img/triple-set-tablet@2x.jpg 2x">
+            <img class="card__picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
+                 alt="Разноцветные вязанные карзинки ручной работы разных размеров">
+          </picture>
+        </div>
         <p class="card__price">Цена: 990 руб.</p>
         <a class="card__button button button--primary" href="#">Заказать</a>
       </article>
@@ -144,7 +173,7 @@
         <div class="contacts__email">
           <dt class="contacts__term">e-mail:</dt>
           <dd class="contacts__definition">
-            <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </dd>
         </div>
         <div class="contacts__address">
@@ -153,7 +182,11 @@
         </div>
       </dl>
       <a href="#" class="contacts__map">
-        <img src="./img/map-mobile@1x%201.jpg" width="320" height="455" alt="Наш адрес на карте">
+        <picture>
+          <source media="(min-width:1150px)" srcset="./img/map-desktop@1x.png 1x, ./img/map-desktop@2x.png 2x">
+          <source media="(min-width:768px" srcset="./img/map-tablet@1x.png 1x, ./img/map-tablet@2x.png 2x">
+          <img src="./img/map-mobile@1x.png" srcset="./img/map-mobile@2x.png 1@2x.png" alt="Наш адрес на карте">
+        </picture>
       </a>
       <a class="contacts__button button button--primary" href="#">Напишите нам</a>
     </div>
@@ -162,7 +195,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper wrapper">
       <a href="#" class="page-footer__logo">
-        <img src="https://via.placeholder.com/86x36" width="86" height="36" alt="Логотип сайта Мишка">
+        <img src="./img/logo-footer.svg" alt="Логотив сайт Мишка">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -238,6 +271,23 @@
     </form>
   </div>
 </section>
+
+<script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function () {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
 
 </body>
 

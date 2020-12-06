@@ -9,6 +9,11 @@
   @media (min-width: $desktop-width) {
     padding-top: 68px;
     padding-bottom: 90px;
+  }
+}
+
+.about-us__wrapper {
+  @media (min-width: $desktop-width) {
     padding-left: 255px;
   }
 }
@@ -41,6 +46,10 @@
   :last-child {
     margin: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .about-us__item {
@@ -52,17 +61,50 @@
   line-height: 20px;
   color: $black;
 
+  &::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 38px;
+    top: -50px;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+
+  &--eco::after {
+    background-image: url("../img/icon-flower.svg");
+  }
+
+  &--price::after {
+    background-image: url("../img/icon-money.svg");
+  }
+
+  &--like::after {
+    background-image: url("../img/icon-heart.svg");
+  }
+
+  &--quality::after {
+    background-image: url("../img/icon-ball.svg");
+
+  }
+
+  &--country::after {
+    background-image: url("../img/icon-rocket.svg");
+  }
+
+  &--packaging::after {
+    background-image: url("../img/icon-gift.svg");
+  }
+
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
-    width: 250px;
-    margin-right: 80px;
+    width: 40%;
     margin-bottom: 110px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 120px;
     margin-bottom: 110px;
   }
 

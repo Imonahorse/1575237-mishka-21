@@ -5,6 +5,13 @@
   @media (min-width: $tablet-width) {
     padding-top: 80px;
     padding-bottom: 80px;
+    background-image: url("../img/review-tablet-back@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/review-desktop-back@1x.png");
+    background-repeat: no-repeat;
   }
 }
 
@@ -18,7 +25,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 175px;
+    padding-left: 255px;
   }
 }
 
@@ -34,6 +41,10 @@
     line-height: 50px;
     margin: 0 auto 35px 0;
     width: 60%;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 53px;
   }
 }
 
@@ -61,11 +72,24 @@
   font-style: normal;
   font-weight: bold;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 60%;
+    display: block;
+  }
+}
+
+.reviews__author-address {
+  @media (min-width: $tablet-width) {
+    width: 60%;
+    display: block;
+  }
 }
 
 .reviews__button {
   width: 260px;
   margin: 0 auto;
+  display: block;
 
   @media (min-width: $tablet-width) {
     margin: 0;
