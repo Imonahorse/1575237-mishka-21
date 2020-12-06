@@ -23,7 +23,7 @@
           <img src="img/mishka-logo-mobile.svg" alt="Логотип сайта Мишка">
         </picture>
       </a>
-      <ul class="main-nav__list site-list">
+      <ul class="main-nav__site-list site-list">
         <li class="site-list__item site-list__item-active">
           <a class="site-list__link" href="catalog.html">Каталог товаров</a>
         </li>
@@ -37,7 +37,7 @@
           <a class="site-list__link" href="#">Распродажа</a>
         </li>
       </ul>
-      <ul class="main-nav__list user-list">
+      <ul class="main-nav__user-list user-list">
         <li class="user-list__item">
           <a href="" class="user-list__link user-list__link--search">
             <img src="img/search.svg" alt="">
@@ -68,10 +68,14 @@
       <p class="intro__slogan">Милые штуки ручной работы&nbsp;для&nbsp;дома</p>
       <ul class="intro__list">
         <li class="intro__item">
-          <a class="intro__link intro__link--interior-items" href="#">Предметы<br> интерьера</a>
+          <a class="intro__link intro__link--interior-items" href="#">
+            <span>Предметы<br> интерьера</span>
+          </a>
         </li>
         <li class="intro__item">
-          <a class="intro__link intro__link--toys" href="#">Детские<br> игрушки</a>
+          <a class="intro__link intro__link--toys" href="#">
+            <span>Детские<br> игрушки</span>
+          </a>
         </li>
       </ul>
     </div>
@@ -81,7 +85,7 @@
     <h2 class="visually-hidden">Промо товара недели</h2>
     <div class="promo-product__wrapper wrapper">
       <article class="promo-product__card card">
-        <h3 class="card__title">Вязаные корзинки<br>
+        <h3 class="card__title">Вязаные корзинки
           <span class="card__status">Товар недели</span>
         </h3>
         <p class="card__description">Экологически чистая пряжа, ручная&nbsp;работа.&nbsp;Доступны в шести расцветках,&nbsp;и&nbsp;трех размерах.</p>
@@ -99,12 +103,14 @@
             <dd class="card__definition">15см</dd>
           </div>
         </dl>
-        <picture>
-          <source media="(min-width:1050px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-          <source media="(min-width:768px)" srcset="img/triple-set-tablet@1x.jpg 1x,img/triple-set-tablet@2x.jpg 2x">
-          <img class="card__picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
-               alt="Разноцветные вязанные карзинки ручной работы разных размеров">
-        </picture>
+        <div class="card__picture-wrapper">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/triple-set-tablet@1x.jpg 1x,img/triple-set-tablet@2x.jpg 2x">
+            <img class="card__picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
+                 alt="Разноцветные вязанные карзинки ручной работы разных размеров">
+          </picture>
+        </div>
         <p class="card__price">Цена: 990 руб.</p>
         <a class="card__button button button--primary" href="#">Заказать</a>
       </article>
@@ -177,7 +183,7 @@
       </dl>
       <a href="#" class="contacts__map">
         <picture>
-          <source media="(min-width:1050px)" srcset="./img/map-desktop@1x.png 1x, ./img/map-desktop@2x.png 2x">
+          <source media="(min-width:1150px)" srcset="./img/map-desktop@1x.png 1x, ./img/map-desktop@2x.png 2x">
           <source media="(min-width:768px" srcset="./img/map-tablet@1x.png 1x, ./img/map-tablet@2x.png 2x">
           <img src="./img/map-mobile@1x.png" srcset="./img/map-mobile@2x.png 1@2x.png" alt="Наш адрес на карте">
         </picture>

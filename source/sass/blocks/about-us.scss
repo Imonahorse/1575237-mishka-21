@@ -13,7 +13,9 @@
 }
 
 .about-us__wrapper {
-  padding-left: 255px;
+  @media (min-width: $desktop-width) {
+    padding-left: 255px;
+  }
 }
 
 .about-us__title {
@@ -44,6 +46,10 @@
   :last-child {
     margin: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .about-us__item {
@@ -62,49 +68,43 @@
     height: 38px;
     top: -50px;
     left: 0;
+    background-repeat: no-repeat;
   }
 
   &--eco::after {
-    background: url("../../img/icon-flower.svg");
-    background-repeat: no-repeat;
+    background-image: url("../img/icon-flower.svg");
   }
 
   &--price::after {
-    background: url("../../img/icon-money.svg");
-    background-repeat: no-repeat;
+    background-image: url("../img/icon-money.svg");
   }
 
   &--like::after {
-    background: url("../../img/icon-heart.svg");
-    background-repeat: no-repeat;
+    background-image: url("../img/icon-heart.svg");
   }
 
   &--quality::after {
-    background: url("../../img/icon-ball.svg");
-    background-repeat: no-repeat;
+    background-image: url("../img/icon-ball.svg");
+
   }
 
   &--country::after {
-    background: url("../../img/icon-rocket.svg");
-    background-repeat: no-repeat;
+    background-image: url("../img/icon-rocket.svg");
   }
 
   &--packaging::after {
-    background: url("../../img/icon-gift.svg");
-    background-repeat: no-repeat;
+    background-image: url("../img/icon-gift.svg");
   }
 
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
-    width: 250px;
-    margin-right: 80px;
+    width: 40%;
     margin-bottom: 110px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 120px;
     margin-bottom: 110px;
   }
 

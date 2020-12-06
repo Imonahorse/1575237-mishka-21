@@ -2,12 +2,17 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
-  margin: 0 -30px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     flex-direction: row;
     order: 1;
+    width: 82%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
   }
 }
 
@@ -32,8 +37,9 @@
 
   @media (min-width: $tablet-width) {
     &--search {
-      width: 80px;
-      padding: 36px 31px 34px 33px;
+      display: block;
+      padding: 36px 31px 35px 33px;
+      width: auto;
     }
 
     &--search span {
@@ -42,10 +48,13 @@
 
     &--search img {
       position: static;
+      display: block;
     }
 
     &--basket {
-      padding: 32px 0px 31px 73px;
+      width: auto;
+      padding-top: 32px;
+      padding-bottom: 33px;
       font-size: 17px;
     }
 
@@ -57,4 +66,8 @@
 
 .user-list__item {
   box-shadow: 0 1px 0 $based-gray-1, inset 0 1px 0 $based-gray-1;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: none;
+  }
 }

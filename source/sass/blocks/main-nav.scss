@@ -2,10 +2,9 @@
   position: relative;
   padding: 0 30px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     padding: 0 50px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -18,22 +17,46 @@
 }
 
 .main-nav__logo {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   padding: 20px 85px;
 
   @media (min-width: $tablet-width) {
-    width: calc(100% - 320px);
+    padding: 22px 0 21px 0;
     display: block;
-    padding-left: 0;
-    box-shadow: 0 1px 0 $based-gray-1, inset 0 1px 0 $based-gray-1;
+
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 10px;
-    padding-bottom: 8px;
-    width: 350px;
-    text-align: center;
+    padding-bottom: 7px;
+  }
+}
+
+.main-nav__logo img {
+  display: block;
+}
+
+.main-nav__site-list {
+  margin: 0 -30px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: -1;
+  }
+}
+
+.main-nav__user-list {
+  margin: 0 -30px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin: 0;
+    margin-left: auto;
   }
 }
 
@@ -41,11 +64,15 @@
   font-size: 15px;
   color: $based-gray-2;
   display: none;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     display: block;
     order: 3;
     margin-left: auto;
+    width: 260px;
+    text-align: right;
+    padding-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,7 +88,7 @@
 
 .main-nav--opened .main-nav__toggle {
   position: absolute;
-  right: 70px;
+  right: 30px;
   top: 35px;
 
   &::before {
@@ -85,7 +112,7 @@
 
 .main-nav--closed .main-nav__toggle {
   position: absolute;
-  right: 50px;
+  right: 30px;
   top: 35px;
   width: 20px;
   height: 2px;
@@ -95,7 +122,8 @@
 
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--closed .main-nav__list {
+  .main-nav--closed .main-nav__site-list,
+  .main-nav--closed .main-nav__user-list {
     display: none;
   }
 }
@@ -105,6 +133,7 @@
 }
 
 
-.main-nav--nojs .main-nav__list {
+.main-nav--nojs .main-nav__site-list,
+.main-nav--nojs .main-nav__user-list {
   display: block;
 }
