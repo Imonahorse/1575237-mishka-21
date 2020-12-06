@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
+    width: 40%;
   }
 }
 
@@ -40,6 +40,8 @@
       display: block;
       padding: 36px 31px 35px 33px;
       width: auto;
+      border-left: 1px solid #e6e6e6;
+      border-right: 1px solid #e6e6e6;
     }
 
     &--search span {
