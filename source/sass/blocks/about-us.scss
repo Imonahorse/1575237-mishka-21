@@ -14,7 +14,7 @@
 
 .about-us__wrapper {
   @media (min-width: $desktop-width) {
-    padding-left: 255px;
+    padding-left: 175px;
   }
 }
 
@@ -85,7 +85,6 @@
 
   &--quality::after {
     background-image: url("../img/icon-ball.svg");
-
   }
 
   &--country::after {

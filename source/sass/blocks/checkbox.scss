@@ -20,6 +20,18 @@
   }
 }
 
+.checkbox__span:hover {
+  &::before {
+    border: 2px solid #62d1ba;
+  }
+}
+
+.checkbox__span:active {
+  &::before {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+  }
+}
+
 .checkbox__input:checked + .checkbox__span::after {
   content: "";
   position: absolute;

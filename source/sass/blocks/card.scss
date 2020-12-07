@@ -6,17 +6,16 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr auto;
-    grid-column-gap: 42px;
+    grid-template-columns: 1fr 1fr;
     padding-top: 40px;
     padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column-gap: 58px;
+    grid-template-columns: auto 525px;
     padding-top: 54px;
     padding-bottom: 73px;
-    padding-left: 255px;
+    padding-left: 175px;
   }
 }
 
@@ -30,7 +29,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: -150px;
+    right: 0;
     top: 10px;
     margin: 0;
     width: 100px;
@@ -38,13 +37,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: -250px;
+    left: -150px;
+    right: auto;
   }
 }
 
 .card__title {
   position: relative;
   margin: 0;
+  padding-right: 130px;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
@@ -53,16 +54,16 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 80%;
     grid-column: 1/3;
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 38px
+    margin-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    grid-row: 1/2;
   }
 }
 
@@ -88,17 +89,18 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
-    margin-bottom: 57px;
+    padding-right: 42px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 109px;
+    padding-right: 58px;
   }
 }
 
 .card__item {
   display: flex;
-  padding: 16px 0;
+  padding: 8px 0;
   font-size: 15px;
   line-height: 20px;
   color: $based-gray-2;
@@ -134,30 +136,37 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
   }
+
+  @media (min-width: $desktop-width) {
+    align-self: flex-end;
+    width: auto;
+    margin: 0 58px 0 0;
+  }
 }
 
 .card__picture {
-  margin-bottom: 25px;
   width: 100%;
-  height: 260px;
+  height: 100%;
   object-fit: contain;
 
-  @media (min-width: $tablet-width) {
-    object-fit: cover;
-    height: 100%;
-    margin-bottom: 0;
+  @media (min-width: $desktop-width) {
+    object-fit: contain;
   }
 }
 
 .card__picture-wrapper {
+  height: 260px;
+  margin-bottom: 25px;
+
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
     grid-row: 2/6;
-    height: 100%;
+    height: 404px;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    grid-row: 2/6;
+    grid-row: 1/6;
+    height: auto;
   }
 }

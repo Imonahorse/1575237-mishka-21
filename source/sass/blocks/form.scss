@@ -25,9 +25,9 @@
       padding-right: 50px;
 
       @media (min-width: $desktop-width) {
-        margin: 0 -96px;
-        padding-left: 96px;
-        padding-right: 96px;
+        margin: 0 -130px;
+        padding-left: 130px;
+        padding-right: 130px;
       }
     }
   }
@@ -48,6 +48,8 @@
 }
 
 .form__legend {
+  position: relative;
+  width: 100%;
   font-weight: bold;
   margin-bottom: 30px;
   font-size: 17px;
@@ -55,10 +57,27 @@
   text-transform: uppercase;
   color: $based-cyan-2;
 
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100% - 60px);
+    height: 1px;
+    background: #62d1ba;
+  }
+
   @media (min-width: $tablet-width) {
     margin-right: 103px;
     font-size: 19px;
     line-height: 18px;
+    width: auto;
+
+    &::after {
+      content: "";
+      display: none;
+    }
   }
 }
 
@@ -102,6 +121,17 @@
 
 .form__button {
   width: 100%;
+  justify-content: center;
+
+  &:hover {
+    color: $white;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #444444;
+  }
 
   @media (min-width: $tablet-width) {
     width: auto;
