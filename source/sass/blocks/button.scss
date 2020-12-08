@@ -16,5 +16,16 @@
     background-color: $white;
     color: $based-gray-2;
     border: 2px solid $based-gray-2;
+    cursor: pointer;
+
+    &:hover {
+      color: $white;
+      background-color: #444444;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #444444;
+    }
   }
 }
