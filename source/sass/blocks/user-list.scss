@@ -29,6 +29,14 @@
   font-size: 17px;
   text-decoration: none;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--search img,
   &--basket svg {
     position: absolute;

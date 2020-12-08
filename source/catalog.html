@@ -13,15 +13,19 @@
 <body class="page__body">
 
 <header class="page-header">
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--closed main-nav--nojs">
     <div class="main-nav__wrapper wrapper">
       <button class="main-nav__toggle button" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="visually-hidden">Закрыть меню</span>
       </button>
       <a class="main-nav__logo">
-        <img src="img/mishka-logo-mobile.svg" alt="Логотип сайта Мишка" width="86" height="35">
+        <picture>
+          <source media="(min-width:1150px)" srcset="img/mishka-logo-desktop.svg">
+          <source media="(min-width:768px)" srcset="img/mishka-logo-tablet.svg">
+          <img src="img/mishka-logo-mobile.svg" alt="Логотип сайта Мишка">
+        </picture>
       </a>
-      <ul class="main-nav__list site-list">
+      <ul class="main-nav__site-list site-list">
         <li class="site-list__item site-list__item-active">
           <a class="site-list__link" href="catalog.html">Каталог товаров</a>
         </li>
@@ -35,15 +39,28 @@
           <a class="site-list__link" href="#">Распродажа</a>
         </li>
       </ul>
-      <div class="main-nav__list user-list">
-        <a href="" class="user-list__link">Поиск по сайту</a>
-        <a href="" class="user-list__link">Корзина: пока пуста</a>
-      </div>
+      <ul class="main-nav__user-list user-list">
+        <li class="user-list__item">
+          <a href="" class="user-list__link user-list__link--search">
+            <img src="img/search.svg" alt="">
+            <span>Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="user-list__item">
+          <a href="" class="user-list__link user-list__link--basket">
+            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.2"
+                    d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z"
+                    fill="black"/>
+            </svg>
+            Корзина: пока пуста
+          </a>
+        </li>
+      </ul>
       <p class="main-nav__delivery-info">Бесплатная доставка по России</p>
     </div>
   </nav>
 </header>
-
 
 <main class="page-main">
 
@@ -60,8 +77,7 @@
               <picture>
                 <source media="(min-width:1200px)" srcset="img/catalog-1-desktop@1x.jpg 1x, img/catalog-1-desktop@2x.jpg 2x">
                 <source media="(min-width:768px)" srcset="img/catalog-1-tablet@1x.jpg 1x, img/catalog-1-tablet@2x.jpg 2x">
-                <img class="production-card__image-link" src="img/catalog-1-mobile@1x.jpg" srcset="img/catalog-1-mobile@2x.jpg 2x"
-                     alt="Вязанный заяц ручной работы в голубой одежде рядом с мороженным">
+                <img class="production-card__image-link" src="img/catalog-1-mobile@1x.jpg" srcset="img/catalog-1-mobile@2x.jpg 2x" alt="Вязанный заяц ручной работы в голубой одежде рядом с мороженным">
               </picture>
             </a>
             <div class="product-card__wrapper">
@@ -90,8 +106,7 @@
               <picture>
                 <source media="(min-width:1200px)" srcset="img/catalog-2-desktop@1x.jpg 1x, img/catalog-2-desktop@2x.jpg 2x">
                 <source media="(min-width:768px)" srcset="img/catalog-2-tablet@1x.jpg 1x, img/catalog-2-tablet@2x.jpg 2x">
-                <img class="production-card__image-link" src="img/catalog-2-mobile@1x.jpg" srcset="img/catalog-2-mobile@2x.jpg 2x"
-                     alt="Двухцветная вязаная корзинка для белья ручной работы">
+                <img class="production-card__image-link" src="img/catalog-2-mobile@1x.jpg" srcset="img/catalog-2-mobile@2x.jpg 2x" alt="Двухцветная вязаная корзинка для белья ручной работы">
               </picture>
             </a>
             <div class="product-card__wrapper">
@@ -120,8 +135,7 @@
               <picture>
                 <source media="(min-width:1200px)" srcset="img/catalog-3-desktop@1x.jpg 1x, img/catalog-3-desktop@2x.jpg 2x">
                 <source media="(min-width:768px)" srcset="img/catalog-3-tablet@1x.jpg 1x, img/catalog-3-tablet@2x.jpg 2x">
-                <img class="production-card__image-link" src="img/catalog-3-mobile@1x.jpg" srcset="img/catalog-3-mobile@2x.jpg 2x"
-                     alt="Большая двухцветная корзинка для игрушек ручной работы">
+                <img class="production-card__image-link" src="img/catalog-3-mobile@1x.jpg" srcset="img/catalog-3-mobile@2x.jpg 2x" alt="Большая двухцветная корзинка для игрушек ручной работы">
               </picture>
             </a>
             <div class="product-card__wrapper">
@@ -147,7 +161,6 @@
       </ul>
     </div>
   </section>
-
 
   <section class="production wrapper">
     <div class="production__wrapper">
