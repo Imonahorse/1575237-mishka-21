@@ -1,4 +1,5 @@
 .about-us {
+  position: relative;
   padding-top: 30px;
   padding-bottom: 60px;
 
@@ -9,6 +10,10 @@
   @media (min-width: $desktop-width) {
     padding-top: 68px;
     padding-bottom: 90px;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -19,6 +24,7 @@
 }
 
 .about-us__title {
+  position: relative;
   margin: 0 0 82px 0;
   font-family: $default-font;
   font-weight: bold;
@@ -34,6 +40,16 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      left: -175px;
+      background-image: url("../img/other-line-desktop.svg");
+      width: 1150px;
+      height: 23px;
+    }
   }
 }
 

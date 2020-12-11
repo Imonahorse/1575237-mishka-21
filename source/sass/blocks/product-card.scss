@@ -107,13 +107,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  padding-top: 23px;
+  border-top: 1px solid #ececec;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    top: -20px;
-    height: 1px;
-    background-color: #ececec;
-  }
 }
