@@ -123,16 +123,6 @@
   width: 100%;
   justify-content: center;
 
-  &:hover {
-    color: $white;
-    background-color: #444444;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #444444;
-  }
-
   @media (min-width: $tablet-width) {
     width: auto;
     order: -1;

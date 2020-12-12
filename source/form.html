@@ -18,7 +18,7 @@
       <button class="main-nav__toggle button" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
-      <a class="main-nav__logo">
+      <a href="index.html" class="main-nav__logo">
         <picture>
           <source media="(min-width:1150px)" srcset="img/mishka-logo-desktop.svg">
           <source media="(min-width:768px)" srcset="img/mishka-logo-tablet.svg">
@@ -72,10 +72,10 @@
 
   <section class="form">
     <h2 class="visually-hidden">Форма заказа</h2>
-    <div class="form__wrapper wrapper">
+    <div class="form__wrapper">
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form__fieldset">
-          <div class="form__fieldset-wrapper">
+          <div class="form__fieldset-wrapper wrapper">
             <legend class="form__legend">Тип</legend>
             <ul class="form__list form__list--radio">
               <li class="form__item radio">
@@ -95,7 +95,7 @@
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--color">
-          <div class="form__fieldset-wrapper">
+          <div class="form__fieldset-wrapper wrapper">
             <legend class="form__legend">Цвет</legend>
             <ul class="form__list form__list--checkbox">
               <li class="form__item checkbox">
@@ -139,7 +139,7 @@
         </fieldset>
 
         <fieldset class="form__fieldset">
-          <div class="form__fieldset-wrapper">
+          <div class="form__fieldset-wrapper wrapper">
             <legend class="form__legend">ФИО</legend>
             <ul class="form__list form__list--text-field">
               <li class="form__item text-input">
@@ -165,7 +165,7 @@
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--color">
-          <div class="form__fieldset-wrapper">
+          <div class="form__fieldset-wrapper wrapper">
             <legend class="visually-hidden">Дополнительные данные</legend>
             <ul class="form__list form__list--text-field">
               <li class="form__item text-input">
@@ -203,7 +203,7 @@
           </div>
         </fieldset>
 
-        <div class="text-input text-input--textarea">
+        <div class="text-input text-input--textarea wrapper">
           <label class="text-input__label text-input__label--textarea">
             <span class="text-input__span text-input__span--textarea">Доп</span>
             <textarea class="text-input__textarea" name="other" cols="27" rows="7"

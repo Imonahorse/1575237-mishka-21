@@ -16,6 +16,19 @@
   display: flex;
   flex-direction: column;
 
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+
   @media (min-width: $tablet-width) {
     padding-left: 34px;
     width: 50%;
@@ -94,13 +107,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  padding-top: 23px;
+  border-top: 1px solid #ececec;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    top: -20px;
-    height: 1px;
-    background-color: #ececec;
-  }
 }

@@ -1,6 +1,33 @@
 .contacts {
+  position: relative;
   padding-bottom: 40px;
   padding-top: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-image: url("../img/other-line-mobile.svg");
+    width: 100%;
+    height: 6px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      background-image: url("../img/other-line-tablet.svg");
+      width: 100%;
+      height: 17px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .contacts__link {
