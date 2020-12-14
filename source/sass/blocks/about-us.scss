@@ -1,25 +1,30 @@
 .about-us {
-  position: relative;
   padding-top: 30px;
   padding-bottom: 60px;
 
+  background-image: url("../img/small-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+
+
   @media (min-width: $tablet-width) {
     padding-bottom: 80px;
+    background-size: auto 17px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 68px;
     padding-bottom: 90px;
-
-    &::before {
-      display: none;
-    }
+    background-image: none;
   }
 }
 
 .about-us__wrapper {
   @media (min-width: $desktop-width) {
     padding-left: 175px;
+    background-image: url("../img/small-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 1050px 23px;
   }
 }
 
@@ -40,16 +45,6 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: -50px;
-      left: -175px;
-      background-image: url("../img/other-line-desktop.svg");
-      width: 1150px;
-      height: 23px;
-    }
   }
 }
 

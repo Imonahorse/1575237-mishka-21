@@ -2,12 +2,6 @@
   padding-bottom: 65px;
 }
 
-.form__wrapper {
-  @media (min-width: $desktop-width) {
-    padding-right: 96px;
-    padding-left: 96px;
-  }
-}
 
 .form__fieldset {
   @include list-reset;
@@ -20,15 +14,9 @@
 
     &--color {
       background-color: $based-gray-3;
-      margin: 0 -50px;
-      padding-left: 50px;
-      padding-right: 50px;
-
-      @media (min-width: $desktop-width) {
-        margin: 0 -130px;
-        padding-left: 130px;
-        padding-right: 130px;
-      }
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
@@ -37,12 +25,15 @@
   @media (min-width: $tablet-width) {
     display: flex;
     padding-top: 50px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 95px;
+
     &--button {
       width: 100%;
-      padding-left: 175px;
+      padding-left: 215px;
     }
   }
 }
