@@ -2,25 +2,26 @@
   padding-top: 58px;
   padding-bottom: 45px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    background-image: url("../img/other-line-mobile.svg");
-    width: 100%;
-    height: 6px;
-  }
-
   @media (min-width: $tablet-width) {
     padding-top: 80px;
     padding-bottom: 80px;
     background-image: url("../img/review-tablet-back@1x.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review-tablet-back@2x.png");
+      background-size: 350px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/review-desktop-back@1x.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review-desktop-back@2x.png");
+    }
+
   }
 }
 

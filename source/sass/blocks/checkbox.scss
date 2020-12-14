@@ -5,6 +5,7 @@
 .checkbox__span {
   position: relative;
   padding-left: 60px;
+  padding-top: 10px;
   display: block;
   width: 200px;
 
@@ -17,6 +18,11 @@
     top: -8px;
     background: transparent;
     border: 2px solid $based-gray-2;
+
+    @media (min-width: $tablet-width) {
+      width: 52px;
+      height: 52px;
+    }
   }
 }
 
@@ -43,4 +49,10 @@
   border-bottom: 2px solid black;
   border-left: 2px solid black;
   transform: rotate(-45deg);
+
+  @media (min-width: $tablet-width) {
+    width: 32px;
+    height: 22px;
+    left: 10px;
+  }
 }
