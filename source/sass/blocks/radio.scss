@@ -16,16 +16,21 @@
   }
 }
 
-.radio__span::before {
-  content: "";
-  position: absolute;
-  width: 42px;
-  height: 42px;
-  left: 0;
-  top: -8px;
-  background: transparent;
-  border: 2px solid $based-gray-2;
-  border-radius: 50%;
+.radio__span {
+  font-size: 19px;
+  line-height: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 0;
+    top: -8px;
+    background: transparent;
+    border: 2px solid $based-gray-2;
+    border-radius: 50%;
+  }
 }
 
 .radio__input:checked + .radio__span::after {
