@@ -3,7 +3,10 @@ const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
+const csso = require("postcss-csso");
 const autoprefixer = require("autoprefixer");
+const rename = require("gulp-rename");
+const imagemin = require("qulp-imagemin");
 const sync = require("browser-sync").create();
 
 // Styles
@@ -14,14 +17,30 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      csso()
     ]))
     .pipe(sourcemap.write("."))
+    .pipe(rename("style.min.css"))
     .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
 }
 
 exports.styles = styles;
+
+// Image
+
+const images = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(imagemin([
+      imagemin.mozjpeg({progressive:true}),
+      imagemin.optipng({optimizationLevel:3}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("dist/img"))
+}
+
+exports.images = images;
 
 // Server
 
