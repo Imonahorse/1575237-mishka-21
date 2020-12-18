@@ -11,3 +11,18 @@
 .copyright__text {
   margin-right: 20px;
 }
+
+.copyright__link {
+  svg {
+    fill: $based-cyan-2;
+  }
+
+  &:hover svg {
+    fill: $based-cyan-4;
+  }
+
+  &:active svg {
+    fill: $based-cyan-4;
+    opacity: 0.3;
+  }
+}

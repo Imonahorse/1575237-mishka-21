@@ -16,6 +16,15 @@
     display: block;
     padding: 60px 0;
     width: 33%;
+
+    &:hover svg {
+      fill: $based-cyan-4;
+    }
+
+    &:active svg {
+      fill: $based-cyan-4;
+      opacity: 0.3;
+    }
   }
 }
 

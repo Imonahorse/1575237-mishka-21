@@ -17,3 +17,14 @@
 .social__item {
   text-align: center;
 }
+
+.social-link {
+  &:hover svg {
+    fill: $based-cyan-4;
+  }
+
+  &:active svg {
+    fill: $based-cyan-4;
+    opacity: 0.3;
+  }
+}
