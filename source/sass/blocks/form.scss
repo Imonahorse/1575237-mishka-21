@@ -57,7 +57,7 @@
     transform: translateY(-50%);
     width: calc(100% - 60px);
     height: 1px;
-    background: #62d1ba;
+    background: $based-cyan-3;
   }
 
   @media (min-width: $tablet-width) {

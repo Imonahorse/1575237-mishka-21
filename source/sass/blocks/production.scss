@@ -3,7 +3,7 @@
 }
 
 .production__wrapper {
-  border: 1px solid #ececec;
+  border: 1px solid $based-gray-1;
 
   @media (min-width: $tablet-width) {
     display: flex;

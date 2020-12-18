@@ -9,7 +9,7 @@
   }
 }
 
-.page-footer__logo {
+.page-footer__logo-wrapper {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -17,13 +17,17 @@
     padding: 60px 0;
     width: 33%;
 
-    &:hover svg {
-      fill: $based-cyan-4;
-    }
+    .page-footer__logo {
+      display: inline-block;
 
-    &:active svg {
-      fill: $based-cyan-4;
-      opacity: 0.3;
+      &:hover svg {
+        fill: $based-cyan-4;
+      }
+
+      &:active svg {
+        fill: $based-cyan-4;
+        opacity: 0.3;
+      }
     }
   }
 }

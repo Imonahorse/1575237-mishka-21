@@ -11,11 +11,11 @@
   outline: none;
 
   &:hover {
-    border-bottom: 2px solid #62d1ba;
+    border-bottom: 2px solid $based-cyan-3;
   }
 
   &:focus {
-    border-bottom: 2px solid #62d1ba;
+    border-bottom: 2px solid $based-cyan-3;
   }
 
 
@@ -46,11 +46,11 @@
   outline: none;
 
   &:hover {
-    border: 2px solid #62d1ba;
+    border: 2px solid $based-cyan-3;
   }
 
   &:focus {
-    border: 2px solid #62d1ba;
+    border: 2px solid $based-cyan-3;
   }
 
   &::placeholder {
@@ -104,7 +104,7 @@
       transform: translateY(-50%);
       width: calc(100% - 60px);
       height: 1px;
-      background: #62d1ba;
+      background: $based-cyan-3;
     }
   }
 

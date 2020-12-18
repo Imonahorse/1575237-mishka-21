@@ -5,9 +5,17 @@
 
 .contacts__link {
   display: block;
-  color: #444444;
-  border-bottom: 1px solid #62d1ba;
+  color: $based-gray-2;
+  border-bottom: 1px solid $based-cyan-3;
   line-height: 30px;
+
+  &:hover {
+    color: $based-cyan-4;
+  }
+
+  &:active {
+    color: rgba($based-cyan-4, 0.1);
+  }
 }
 
 .contacts__wrapper {

@@ -1,9 +1,9 @@
 .intro {
-  background-color: #fafafa;
+  background-color: $based-gray-6;
 
   @media (min-width: $tablet-width) {
     margin-top: -45px;
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px solid $based-gray-5;
     position: relative;
   }
 
@@ -109,11 +109,11 @@
         transition: 0.5s;
 
         .intro__link--interior-items {
-          background-color: #59D5BC;
+          background-color: $based-cyan-5;
         }
 
         .intro__link--toys {
-          background-color: #46C1AE;
+          background-color: $based-cyan-4;
         }
       }
     }
