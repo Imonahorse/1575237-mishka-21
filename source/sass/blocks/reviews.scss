@@ -2,6 +2,10 @@
   padding-top: 18px;
   padding-bottom: 45px;
 
+  background-image: url("../img/small-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+
   @media (min-width: $tablet-width) {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -79,9 +83,11 @@
 }
 
 .reviews__author-name {
+  display: block;
+  margin-bottom: 6px;
   font-style: normal;
   font-weight: bold;
-  text-transform: uppercase;
+  font-size: 17px;
 
   @media (min-width: $tablet-width) {
     width: 60%;
@@ -90,6 +96,8 @@
 }
 
 .reviews__author-address {
+  font-size: 17px;
+
   @media (min-width: $tablet-width) {
     width: 60%;
     display: block;
