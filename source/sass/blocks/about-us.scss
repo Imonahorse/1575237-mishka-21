@@ -74,9 +74,10 @@
     position: absolute;
     width: 55px;
     height: 38px;
-    top: -50px;
-    left: 0;
+    top: -55px;
+    left: -4px;
     background-repeat: no-repeat;
+    background-position: center top;
   }
 
   &--eco::after {
@@ -89,6 +90,7 @@
 
   &--like::after {
     background-image: url("../img/icon-heart.svg");
+    top: -51px;
   }
 
   &--quality::after {
@@ -97,6 +99,7 @@
 
   &--country::after {
     background-image: url("../img/icon-rocket.svg");
+    top: -51px;
   }
 
   &--packaging::after {

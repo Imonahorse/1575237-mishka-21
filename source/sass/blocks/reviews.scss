@@ -1,10 +1,11 @@
 .reviews {
   padding-top: 18px;
-  padding-bottom: 45px;
+  padding-bottom: 50px;
 
   background-image: url("../img/small-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: auto 6px;
+  background-position: bottom;
 
   @media (min-width: $tablet-width) {
     padding-top: 80px;
