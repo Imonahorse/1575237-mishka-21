@@ -26,8 +26,12 @@
   }
 }
 
+.card__title-wrapper {
+  position: relative;
+  margin-bottom: 15px;
+}
+
 .card__status {
-  margin-bottom: 17px;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 17px;
@@ -50,12 +54,12 @@
 }
 
 .card__title {
-  position: relative;
   margin: 0;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
   color: $black;
+  margin-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -75,7 +79,7 @@
 }
 
 .card__description {
-  margin: 0 0 28px 0;
+  margin: 0 0 18px 0;
   color: $based-gray-2;
 
   @media (min-width: $tablet-width) {
@@ -107,7 +111,7 @@
 
 .card__item {
   display: flex;
-  padding: 8px 0;
+  padding: 9px 0 10px 0;
   font-size: 15px;
   line-height: 20px;
   color: $based-gray-2;
@@ -117,6 +121,10 @@
 
 .card__term {
   width: 20%;
+}
+
+.card-definition {
+  margin-left: 46px;
 }
 
 .card__price {
@@ -164,8 +172,8 @@
 }
 
 .card__picture-wrapper {
-  height: 260px;
-  margin-bottom: 25px;
+  height: 315px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/3;

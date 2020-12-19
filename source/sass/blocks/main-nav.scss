@@ -19,7 +19,7 @@
 .main-nav__logo {
   display: flex;
   justify-content: center;
-  padding: 20px 85px;
+  padding: 22px 85px;
 
   &:hover {
     opacity: 0.6;
@@ -100,7 +100,7 @@
 .main-nav--opened .main-nav__toggle {
   position: absolute;
   z-index: 20;
-  right: 30px;
+  right: 20px;
   top: 18px;
   width: 20px;
   height: 21px;
