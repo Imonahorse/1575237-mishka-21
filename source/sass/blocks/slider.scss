@@ -11,6 +11,10 @@
   display: flex;
   margin-bottom: 38px;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .slider__button {
@@ -30,5 +34,6 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 12px 0 10px 0;
   }
 }

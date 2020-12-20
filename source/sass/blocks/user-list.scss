@@ -6,7 +6,6 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     order: 1;
-    width: 82%;
     flex-wrap: wrap;
     justify-content: flex-end;
   }
@@ -61,7 +60,7 @@
   &--basket svg {
     position: absolute;
     left: 0;
-    top:31px;
+    top: 31px;
   }
 
   @media (min-width: $tablet-width) {
@@ -84,13 +83,15 @@
 
     &--basket {
       width: auto;
-      padding-top: 32px;
-      padding-bottom: 33px;
+      padding-top: 33px;
+      padding-bottom: 32px;
       font-size: 17px;
+      padding-left: 84px;
     }
 
     &--basket svg {
-      left: 20px;
+      left: 33px;
+      top: auto;
     }
   }
 }
