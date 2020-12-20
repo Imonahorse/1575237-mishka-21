@@ -11,6 +11,12 @@
     background-size: auto 17px;
     padding-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    background-image: none;
+    padding-bottom: 105px;
+  }
 }
 
 .contacts__link {
@@ -26,15 +32,23 @@
   &:active {
     color: rgba($based-cyan-4, 0.1);
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 8px;
+    padding-right: 0;
+  }
 }
 
 .contacts__wrapper {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: auto calc(100% - 330px);
-    grid-column-gap: 40px;
     padding-left: 175px;
-
+    padding-top: 90px;
+    background-image: url("../img/small-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: auto 23px;
+    background-position: top;
   }
 }
 
@@ -61,13 +75,20 @@
       background-image: url("../img/flag.svg");
       background-repeat: no-repeat;
     }
+
+    @media (min-width: $desktop-width) {
+      left: -111px;
+      top: 63px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
     font-size: 53px;
     line-height: 57px;
-    padding-top: 100px;
+    padding-top: 79px;
+    margin-bottom: 22px;
+    margin-right: 77px;
 
     &::after {
       left: -85px;
@@ -99,6 +120,10 @@
 
 .contacts__email {
   margin-bottom: 30px;
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+    padding-bottom: 24px;
+  }
 }
 
 .contacts__email,
@@ -126,10 +151,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 527px;
+    height: 457px;
     margin: 0;
     grid-column: 2/3;
     grid-row: 1/4;
-    height: 100%;
   }
 }
 
@@ -167,5 +193,9 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
   }
 }

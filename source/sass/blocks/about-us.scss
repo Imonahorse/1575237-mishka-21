@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 68px;
+    padding-top: 70px;
     padding-bottom: 90px;
     background-image: none;
   }
@@ -22,7 +22,7 @@
 
 .about-us__wrapper {
   @media (min-width: $desktop-width) {
-    padding-left: 175px;
+    padding-left: 225px;
   }
 }
 
@@ -124,6 +124,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 110px;
+    margin-right: 29px;
   }
 
   &--eco {

@@ -87,6 +87,11 @@
       padding-bottom: 32px;
       font-size: 17px;
       padding-left: 84px;
+
+      @media (min-width: $desktop-width) {
+        padding-left: 81px;
+        padding-right: 2px;
+      }
     }
 
     &--basket svg {
@@ -101,5 +106,14 @@
 
   @media (min-width: $tablet-width) {
     box-shadow: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--search {
+      width: 20%;
+    }
+    &--basket {
+      width: 63%;
+    }
   }
 }

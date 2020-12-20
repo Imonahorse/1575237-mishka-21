@@ -155,17 +155,17 @@ const build = gulp.series(
     copy,
     images,
     createWebp
-  )
-)
+  ));
 
 exports.build = build;
 
+// Default
 
 exports.default = gulp.series(
   clean,
   gulp.parallel(
-    styles,
     html,
+    styles,
     scripts,
     sprite,
     copy,
@@ -173,6 +173,5 @@ exports.default = gulp.series(
   ),
   gulp.series(
     server,
-    watcher
-  )
-);
+    watcher,
+  ));

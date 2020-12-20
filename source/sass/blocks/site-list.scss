@@ -48,8 +48,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 32px;
-    padding-bottom: 33px;
+    padding-top: 34px;
+    padding-bottom: 31px;
   }
 }
 
@@ -62,14 +62,28 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 44%;
+
+    &:nth-child(2n+2) {
+      width: 50%;
+    }
+
     &:nth-child(1) a,
     &:nth-child(2) a {
       font-size: 17px;
     }
 
+    &:nth-child(n+3) a {
+      padding-top: 19px;
+    }
+
     &:nth-child(2n) a {
       padding-left: 35px;
       padding-right: 15px;
+    }
+
+    &:nth-child(4n+4) {
+      padding-right: 27px;
     }
 
     &:first-child {
