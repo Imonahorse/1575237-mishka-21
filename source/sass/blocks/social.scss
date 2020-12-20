@@ -5,6 +5,11 @@
   border-bottom: 1px solid $based-gray-4;
 
   @media (min-width: $tablet-width) {
+    padding: 53px 0 64px 0;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 53px 61px 64px 61px;
     justify-content: flex-start;
   }
@@ -12,11 +17,15 @@
 
 .social__list {
   @include list-reset;
-  width: 140px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .social__item {

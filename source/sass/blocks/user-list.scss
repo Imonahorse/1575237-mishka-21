@@ -30,31 +30,26 @@
 
   &:hover {
     opacity: 0.6;
+
+    svg {
+      fill: $based-cyan-2;
+      opacity: 1;
+    }
   }
 
   &:active {
     opacity: 0.3;
-  }
 
-  &--basket,
-  &--search {
-    &:hover {
-      opacity: 1;
-
-      svg {
-        fill: $based-cyan-2;
-      }
-    }
-
-    &:active {
-      opacity: 1;
-
-      svg {
-        fill: $based-cyan-2;
-        opacity: 0.3;
-      }
+    svg {
+      fill: $based-cyan-2;
+      opacity: 0.3;
     }
   }
+
+  svg {
+    opacity: 0.2;
+  }
+
 
   &--search svg,
   &--basket svg {
@@ -112,6 +107,7 @@
     &--search {
       width: 20%;
     }
+
     &--basket {
       width: 63%;
     }
