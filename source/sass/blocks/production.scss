@@ -40,21 +40,23 @@
 .production__icon {
   position: absolute;
   top: 35px;
-  left: 40px;
+  left: 33px;
 
   @media (min-width: $desktop-width) {
     left: 0;
   }
 }
 
+.production__title-wrapper {
+  position: relative;
+}
+
+
 .production__title {
   @include list-reset;
-  position: relative;
-  width: 156px;
   padding: 21px 13px 26px 91px;
   font-weight: bold;
   font-size: 17px;
-  text-align: left;
 
   @media (min-width: $tablet-width) {
     width: 400px;
@@ -85,6 +87,7 @@
 
 .production__player {
   position: relative;
+  height: 150px;
 
   @media (min-width: $tablet-width) {
     order: -1;
@@ -126,10 +129,7 @@
 }
 
 .production__info {
-  padding-top: 35px;
-  padding-left: 33px;
-  padding-right: 33px;
-  padding-bottom: 34px;
+  padding: 35px 32px 34px 32px;
 
   @media (min-width: $desktop-width) {
     padding: 0 0 30px 0;

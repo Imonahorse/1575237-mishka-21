@@ -18,44 +18,40 @@
 .user-list__link {
   position: relative;
   font-family: inherit;
-  color: inherit;
+  color: currentColor;
   display: block;
-  padding: 28px 0;
-  padding-left: 46px;
+  padding: 28px 0 27px 46px;
   width: 260px;
   margin: 0 auto;
   font-weight: bold;
   font-size: 17px;
   text-decoration: none;
 
-  &:hover {
-    opacity: 0.6;
-
-    svg {
-      fill: $based-cyan-2;
-      opacity: 1;
-    }
-  }
-
-  &:active {
-    opacity: 0.3;
-
-    svg {
-      fill: $based-cyan-2;
-      opacity: 0.3;
+  &--basket,
+  &--search {
+    &:hover {
+      opacity: 0.6;
     }
   }
 
   svg {
-    opacity: 0.2;
-  }
-
-
-  &--search svg,
-  &--basket svg {
     position: absolute;
     left: 0;
     top: 31px;
+    opacity: 0.2;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      color: $based-cyan-2;
+      opacity: 1;
+    }
+  }
+
+  &:active svg {
+    fill: $based-cyan-2;
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
@@ -65,6 +61,12 @@
       width: auto;
       border-left: 1px solid $based-gray-5;
       border-right: 1px solid $based-gray-5;
+    }
+
+    &--search {
+      &:hover {
+        opacity: 1;
+      }
     }
 
     &--search span {

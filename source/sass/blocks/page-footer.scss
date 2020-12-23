@@ -3,9 +3,14 @@
 }
 
 .page-footer__wrapper {
+  padding-top: 25px;
+  padding-bottom: 23px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 51px;
+    padding-bottom: 58px;
   }
 }
 
@@ -14,21 +19,23 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding: 52px 0 60px 0;
     width: 33%;
+  }
+}
 
-    .page-footer__logo {
-      display: inline-block;
+.page-footer__logo {
+  display: inline-block;
+  vertical-align: middle;
+  color: $black;
 
-      &:hover svg {
-        fill: $based-cyan-4;
-      }
+  &:hover svg,
+  &:focus svg {
+    color: $based-cyan-4;
+  }
 
-      &:active svg {
-        fill: $based-cyan-4;
-        opacity: 0.3;
-      }
-    }
+  &:active svg {
+    color: $based-cyan-4;
+    opacity: 0.3;
   }
 }
 

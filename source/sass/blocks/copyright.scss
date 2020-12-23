@@ -1,31 +1,38 @@
 .copyright {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 22px 20px 0 40px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
+    padding: 0;
   }
 }
 
 .copyright__text {
-  margin-right: 20px;
+  @include list-reset;
+  margin-right: 27px;
   font-size: 19px;
-  padding-left: 39px;
-  padding-top: 9px;
+  padding-top: 3px;
+
+  @media (min-width: $desktop-width) {
+    padding: 3px 3px 0 0;
+  }
 }
 
 .copyright__link {
+  color: $black;
+
   svg {
-    fill: $based-cyan-2;
+    color: $based-cyan-2;
   }
 
-  &:hover svg {
-    fill: $based-cyan-4;
+  &:hover svg,
+  &:focus svg{
+    color: $based-cyan-4;
   }
 
   &:active svg {
-    fill: $based-cyan-4;
+    color: $based-cyan-4;
     opacity: 0.3;
   }
 }

@@ -1,17 +1,22 @@
 .social {
+  @include list-reset;
   display: flex;
-  justify-content: center;
-  padding: 24px 60px 20px 60px;
+  padding-bottom: 22px;
+  padding-left: 60px;
+  padding-right: 60px;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid $based-gray-4;
 
   @media (min-width: $tablet-width) {
-    padding: 53px 0 64px 0;
     justify-content: flex-start;
+    border: none;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 53px 61px 64px 61px;
     justify-content: flex-start;
+    padding-left: 62px;
   }
 }
 
@@ -38,12 +43,15 @@
 }
 
 .social-link {
-  &:hover svg {
-    fill: $based-cyan-4;
+  color: $black;
+
+  &:hover svg,
+  &:focus svg {
+    color: $based-cyan-4;
   }
 
   &:active svg {
-    fill: $based-cyan-4;
+    color: $based-cyan-4;
     opacity: 0.3;
   }
 }

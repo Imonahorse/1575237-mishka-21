@@ -7,12 +7,37 @@ const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const autoprefixer = require("autoprefixer");
 const htmlmin = require("gulp-htmlmin");
-const uglify = require("gulp-uglify");
+const uglify = require("gulp-uglify-es").default;
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const gulpif = require("gulp-if")
 const sync = require("browser-sync").create();
+
+
+const config = {
+  src: '/source/',
+  dist: './dist/',
+  html: {
+    src: '**/*.html',
+    dest: '/'
+  },
+  img: {
+    src: 'img/**/*',
+    dest: 'img'
+  },
+  css: {
+    src: 'scss/style.scss',
+    watch: 'scss/**/*.scss',
+    dest: 'css'
+  },
+  js: {
+    src: 'js/main.js',
+    watch: 'js/**/*.js',
+    dest: "js"
+  }
+};
 
 // Styles
 
@@ -85,7 +110,7 @@ const sprite = () => {
   return gulp.src("source/img/icons/*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("dist/img/icons"))
+    .pipe(gulp.dest("dist/img"))
 }
 
 exports.sprite = sprite;
@@ -138,7 +163,7 @@ const reload = done => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series(styles));
+  gulp.watch("source/scss/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
@@ -162,16 +187,7 @@ exports.build = build;
 // Default
 
 exports.default = gulp.series(
-  clean,
-  gulp.parallel(
-    html,
-    styles,
-    scripts,
-    sprite,
-    copy,
-    createWebp
-  ),
-  gulp.series(
-    server,
-    watcher,
-  ));
+  build,
+  server,
+  watcher,
+);

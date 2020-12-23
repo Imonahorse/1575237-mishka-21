@@ -41,7 +41,7 @@
         <li class="user-list__item user-list__item--search">
           <a href="" class="user-list__link user-list__link--search">
             <svg width="18" height="18">
-              <use xlink:href="img/icons/sprite.svg#icon-search"></use>
+              <use xlink:href="img/sprite.svg#icon-search"></use>
             </svg>
             <span>Поиск по сайту</span>
           </a>
@@ -49,7 +49,7 @@
         <li class="user-list__item user-list__item--basket">
           <a href="" class="user-list__link user-list__link--basket">
             <svg width="20" height="19">
-              <use xlink:href="img/icons/sprite.svg#icon-cart"></use>
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
             Корзина: пока пуста
           </a>
@@ -108,7 +108,8 @@
           <picture>
             <source media="(min-width:1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
             <source media="(min-width:768px)" srcset="img/triple-set-tablet@1x.jpg 1x,img/triple-set-tablet@2x.jpg 2x">
-            <img class="card__picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Разноцветные вязанные карзинки ручной работы разных размеров">
+            <img class="card__picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
+                 alt="Разноцветные вязанные карзинки ручной работы разных размеров">
           </picture>
         </div>
         <p class="card__price">Цена: 990 руб.</p>
@@ -168,13 +169,13 @@
     <div class="contacts__wrapper">
       <h2 class="contacts__title">Контакты</h2>
       <dl class="contacts__info">
-        <div class="contacts__email">
+        <div class="contact__item contacts__item--email">
           <dt class="contacts__term">e-mail:</dt>
           <dd class="contacts__definition">
             <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </dd>
         </div>
-        <div class="contacts__address">
+        <div class="contacts__item contacts__item--address">
           <dt class="contacts__term">адрес:</dt>
           <dd class="contacts__definition">г. Санкт-Петербург<br> ул. Большая Конюшенная<br> д. 19/8, офис 101</dd>
         </div>
@@ -196,42 +197,40 @@
     <div class="page-footer__logo-wrapper">
       <a href="#" class="page-footer__logo">
         <svg width="102" height="34">
-          <use xlink:href="img/icons/sprite.svg#icon-footer-logo"></use>
+          <use xlink:href="./img/sprite.svg#icon-footer-logo"></use>
         </svg>
       </a>
     </div>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social-link social__link--instagram" href="https://www.instagram.com/">
-            <svg width="22" height="22">
-              <use xlink:href="img/icons/sprite.svg#icon-insta"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social-link social__link--facebook" href="https://www.facebook.com/">
-            <svg width="15" height="28">
-              <use xlink:href="img/icons/sprite.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social-link social__link--twitter" href="https://www.twitter.com/">
-            <svg width="23" height="20">
-              <use xlink:href="img/icons/sprite.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social-link social__link--instagram" href="https://www.instagram.com/">
+          <svg width="22" height="22">
+            <use xlink:href="img/sprite.svg#icon-insta"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social-link social__link--facebook" href="https://www.facebook.com/">
+          <svg width="15" height="28">
+            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social-link social__link--twitter" href="https://www.twitter.com/">
+          <svg width="23" height="20">
+            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">
         <b>Разработано</b>
       </p>
       <a href="" class="copyright__link">
         <svg width="27" height="35">
-          <use xlink:href="img/icons/sprite.svg#icon-htmlacademy"></use>
+          <use xlink:href="img/sprite.svg#icon-academy"></use>
         </svg>
       </a>
     </div>

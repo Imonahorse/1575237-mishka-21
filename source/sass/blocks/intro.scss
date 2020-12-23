@@ -103,6 +103,7 @@
   .intro__item {
     @media (min-width: $tablet-width) {
       width: 50%;
+      min-height: 100%;
     }
 
     @media (min-width: $tablet-width) {

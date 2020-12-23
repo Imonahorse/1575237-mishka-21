@@ -94,37 +94,29 @@
 }
 
 .main-nav__toggle {
+  position: absolute;
+  z-index: 20;
+  right: 20px;
+  top: 18px;
+  width: 20px;
+  padding: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
 .main-nav--opened .main-nav__toggle {
-  position: absolute;
-  z-index: 20;
-  right: 20px;
-  top: 18px;
-  width: 20px;
   height: 21px;
-  padding: 20px;
   background-image: url("../img/menu-close.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: poiter;
 }
 
 .main-nav--closed .main-nav__toggle {
-  position: absolute;
-  z-index: 20;
-  right: 20px;
-  top: 18px;
-  width: 20px;
-  height: 21px;
-  padding: 20px;
+  height: 14px;
   background-image: url("../img/menu-open.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: poiter;
 }
 
 

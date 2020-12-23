@@ -12,7 +12,7 @@
 }
 
 .product-card__wrapper {
-  padding: 27px 28px;
+  padding: 30px 28px 24px 28px;
   display: flex;
   flex-direction: column;
 
@@ -44,7 +44,6 @@
   @include list-reset;
   font-weight: bold;
   font-size: 17px;
-  margin-bottom: 7px;
   color: $black;
 
   @media (min-width: $tablet-width) {
@@ -54,12 +53,16 @@
   }
 }
 
+.product-card__title-link {
+  margin-bottom: 5px;
+}
+
 .product-card__description {
   @include list-reset;
   font-size: 13px;
   line-height: 30px;
   color: $based-gray-2;
-  margin-bottom: 41px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
