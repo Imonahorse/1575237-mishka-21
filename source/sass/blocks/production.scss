@@ -1,5 +1,13 @@
 .production {
   padding-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 103px;
+  }
 }
 
 .production__wrapper {
@@ -14,9 +22,10 @@
     display: grid;
     position: relative;
     grid-template-columns: 682px 1fr;
-    column-gap: 80px;
+    grid-template-rows: min-content 1fr;
+    column-gap: 79px;
     padding-bottom: 0;
-    padding-right: 50px;
+    padding-right: 55px;
 
     &:hover {
       &::after {
@@ -42,8 +51,15 @@
   top: 35px;
   left: 33px;
 
+  @media (min-width: $tablet-width) {
+    top: 40px;
+    left: 40px;
+
+  }
+
   @media (min-width: $desktop-width) {
     left: 0;
+    top: 47px;
   }
 }
 
@@ -59,8 +75,9 @@
   font-size: 17px;
 
   @media (min-width: $tablet-width) {
-    width: 400px;
-    padding-top: 40px;
+    padding-top: 42px;
+    padding-left: 105px;
+    padding-bottom: 10px;
     text-align: left;
     font-size: 20px;
   }
@@ -83,6 +100,11 @@
     font-size: 15px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
+    padding-top: 18px;
+  }
 }
 
 .production__player {
@@ -91,6 +113,7 @@
 
   @media (min-width: $tablet-width) {
     order: -1;
+    height: 455px;
   }
 
   @media (min-width: $desktop-width) {
@@ -120,6 +143,10 @@
 
 .production__button {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .production__video {
@@ -129,7 +156,11 @@
 }
 
 .production__info {
-  padding: 35px 32px 34px 32px;
+padding: 35px 32px 33px 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 40px 45px 40px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0 0 30px 0;

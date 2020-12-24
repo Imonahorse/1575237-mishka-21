@@ -4,12 +4,17 @@
 
 .checkbox__span {
   position: relative;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 18px;
-  padding-left: 90px;
+  padding-left: 61px;
   padding-top: 10px;
   display: block;
-  width: 200px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+    padding-left: 82px;
+  }
 
   &::before {
     content: "";
@@ -17,13 +22,15 @@
     width: 38px;
     height: 38px;
     left: 0;
-    top: -8px;
+    top: 60%;
+    transform: translateY(-50%);
     background: transparent;
     border: 2px solid $based-gray-2;
 
     @media (min-width: $tablet-width) {
       width: 52px;
       height: 52px;
+      top: 76%;
     }
   }
 }
@@ -45,12 +52,12 @@
   position: absolute;
   width: 26px;
   height: 13px;
-  left: 6px;
-  top: 0;
+  left: 12px;
+  top: 45%;
   background: transparent;
   border-bottom: 2px solid black;
   border-left: 2px solid black;
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) translateY(-50%);
 
   @media (min-width: $tablet-width) {
     width: 32px;

@@ -1,10 +1,13 @@
 .form-intro {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
   @media (min-width: $tablet-width) {
     margin-top: -45px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -90px;
+    margin-top: -75px;
+    margin-bottom: 83px;
   }
 }
 
@@ -21,15 +24,20 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    padding: 101px 0 75px 0;
-    margin: 0 auto 54px auto;
+    padding: 101px 0 85px 0;
+    margin: 0 auto;
+    background-image: url("../img/big-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: auto 24px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    padding: 102px 0 95px 0;
-    margin: 0 auto 100px auto;
+    padding: 102px 0 110px 0;
+    margin: 0 auto;
+    background-size: auto 34px;
   }
 }
 
@@ -37,15 +45,18 @@
   padding-top: 17px;
   font-size: 13px;
   color: $based-gray-2;
-  margin-bottom: 30px;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
-    line-height: 24px;
+    line-height: 30px;
+    padding-top: 55px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 220px;
     padding-right: 220px;
+    margin-bottom: 50px;
   }
 }
