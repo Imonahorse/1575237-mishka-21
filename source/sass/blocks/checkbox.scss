@@ -9,6 +9,7 @@
   padding-left: 61px;
   padding-top: 10px;
   display: block;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
@@ -26,6 +27,7 @@
     transform: translateY(-50%);
     background: transparent;
     border: 2px solid $based-gray-2;
+    cursor: pointer;
 
     @media (min-width: $tablet-width) {
       width: 52px;
@@ -51,21 +53,14 @@
   }
 }
 
-.checkbox__input:checked + .checkbox__span::after {
+.checkbox__input:checked + .checkbox__span::before {
   content: "";
-  position: absolute;
-  width: 26px;
-  height: 13px;
-  left: 12px;
-  top: 45%;
-  background: transparent;
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
-  transform: rotate(-45deg) translateY(-50%);
+  background-image: url("../img/tick.svg");
+  background-position: 50% 50%;
+  background-size: 26px 18px;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    width: 32px;
-    height: 22px;
-    left: 10px;
+    background-size: 33px 23px;
   }
 }

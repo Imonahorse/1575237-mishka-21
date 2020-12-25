@@ -109,6 +109,14 @@
     @media (min-width: $tablet-width) {
       transition: 1s;
 
+      .intro__link--interior-items {
+        box-shadow: 0 5px 0 0 $based-cyan-5;
+      }
+
+      .intro__link--toys {
+        box-shadow: 0 5px 0 0 $based-cyan-4;
+      }
+
       &:hover {
         transform: translateY(-5px);
         transition: 0.5s;
