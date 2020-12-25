@@ -106,6 +106,10 @@
       width: calc(100% - 60px);
       height: 1px;
       background: $based-cyan-3;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
     }
   }
 
@@ -129,10 +133,19 @@
       width: 90px;
       font-size: 17px;
       margin-right: 100px;
+    }
+  }
 
-      &::after {
-        display: none;
-      }
+  @media (min-width: $desktop-width) {
+    margin-right: 24px;
+
+    &--tel,
+    &--email {
+      margin-right: 35px;
+    }
+
+    &--textarea {
+      margin-right: 34px;
     }
   }
 }
@@ -163,6 +176,10 @@
     @media (min-width: $tablet-width) {
       right: 25px;
     }
+
+    @media (min-width: $desktop-width) {
+      right: 9px;
+    }
   }
 
   &--email svg {
@@ -178,6 +195,10 @@
     @media (min-width: $tablet-width) {
       right: 25px;
     }
+
+    @media (min-width: $desktop-width) {
+      right: 9px;
+    }
   }
 }
 
@@ -190,6 +211,14 @@
     &--textarea {
       padding-top: 50px;
       padding-bottom: 53px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--textarea {
+      padding-left: 112px;
+      padding-right: 224px;
+      padding-bottom: 50px;
     }
   }
 }

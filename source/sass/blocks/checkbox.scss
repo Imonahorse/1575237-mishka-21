@@ -32,6 +32,10 @@
       height: 52px;
       top: 76%;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 60%;
+    }
   }
 }
 
