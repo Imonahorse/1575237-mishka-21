@@ -54,6 +54,15 @@
     line-height: 24px;
     text-align: left;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product-card__title-link {
@@ -124,5 +133,22 @@
 .product-card__to-basket {
   @media (min-width: $tablet-width) {
     margin-right: 5px;
+  }
+
+  svg {
+    color: $black;
+    opacity: 0.2;
+
+
+    &:hover,
+    &:focus {
+      color:$based-cyan-2;
+      opacity: 1;
+    }
+
+    &:active {
+      color:$based-cyan-2;
+      opacity: 0.2;
+    }
   }
 }

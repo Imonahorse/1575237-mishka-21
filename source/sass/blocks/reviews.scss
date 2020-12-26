@@ -71,7 +71,7 @@
 }
 
 .reviews__item,
-.reviews__author-address,
+.reviews__id,
 .reviews__text {
   @include list-reset;
 }
@@ -91,7 +91,7 @@
   }
 }
 
-.reviews__author-name {
+.reviews__cite {
   display: block;
   margin-bottom: 6px;
   font-style: normal;

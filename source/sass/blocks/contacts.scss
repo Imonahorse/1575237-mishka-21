@@ -32,11 +32,15 @@
 
   &:active {
     color: rgba($based-cyan-4, 0.1);
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 8px;
-    padding-right: 0;
   }
 }
 
@@ -44,7 +48,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: auto calc(100% - 350px);
-    padding-left: 175px;
+    padding-left: 225px;
     padding-top: 90px;
     background-image: url("../img/small-zigzag-line.svg");
     background-repeat: repeat-x;

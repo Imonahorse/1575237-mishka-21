@@ -35,3 +35,17 @@ modalButton.addEventListener("click", function (evt) {
   orderPopup.classList.remove("modal__order--open");
   orderPopup.classList.add("modal__order--close");
 });
+
+// slider
+
+const sliderButtonLeft = document.querySelectorAll(".slider__button--left");
+const sliderButtonRight = document.querySelectorAll(".slider__button--right");
+const sliderItem = document.querySelector(".slider__item");
+const sliderCurrent = document.querySelector(".slider__item--current");
+
+  sliderButtonLeft.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    sliderCurrent.classList.remove("slider__item--current");
+    sliderItem.classList.add("slider__item--current");
+  });
+

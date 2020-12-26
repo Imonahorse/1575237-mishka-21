@@ -28,13 +28,6 @@
   color: currentColor;
   text-decoration: none;
 
-  &--basket,
-  &--search {
-    &:hover {
-      opacity: 0.6;
-    }
-  }
-
   svg {
     position: absolute;
     left: 0;
@@ -42,12 +35,10 @@
     opacity: 0.2;
   }
 
-  &:hover,
-  &:focus {
-    svg {
-      color: $based-cyan-2;
-      opacity: 1;
-    }
+  &:hover svg,
+  &:focus svg {
+    color: $based-cyan-2;
+    opacity: 1;
   }
 
   &:active svg {
@@ -55,31 +46,32 @@
     opacity: 0.3;
   }
 
-  @media (min-width: $tablet-width) {
-    &--search {
+
+  &--search {
+    @media (min-width: $tablet-width) {
       display: block;
       padding: 36px 31px 35px 33px;
       width: auto;
       border-left: 1px solid $based-gray-5;
       border-right: 1px solid $based-gray-5;
-    }
 
-    &--search {
       &:hover {
         opacity: 1;
       }
-    }
 
-    &--search span {
-      display: none;
-    }
+      span {
+        display: none;
+      }
 
-    &--search svg {
-      position: static;
-      display: block;
+      svg {
+        position: static;
+        display: block;
+      }
     }
+  }
 
-    &--basket {
+  &--basket {
+    @media (min-width: $tablet-width) {
       width: auto;
       padding-top: 33px;
       padding-bottom: 32px;
@@ -90,11 +82,20 @@
         padding-left: 81px;
         padding-right: 2px;
       }
-    }
 
-    &--basket svg {
-      left: 33px;
-      top: auto;
+      svg {
+        left: 33px;
+        top: auto;
+      }
+
+      &:hover span,
+      &:focus span {
+        opacity: 0.6;
+      }
+
+      &:active span {
+        opacity: 0.3;
+      }
     }
   }
 }
