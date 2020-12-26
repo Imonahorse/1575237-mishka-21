@@ -8,18 +8,6 @@
   }
 }
 
-.radio__span:hover {
-  &::before {
-    border: 2px solid $based-cyan-3;
-  }
-}
-
-.radio__span:active {
-  &::before {
-    border: 2px solid rgba($black, 0.3);
-  }
-}
-
 .radio__span {
   font-size: 17px;
   line-height: 18px;
@@ -29,7 +17,6 @@
     font-size: 19px;
     line-height: 18px;
   }
-
 
   &::before {
     content: "";
@@ -51,6 +38,18 @@
       top: 48%;
       font-size: 19px;
       line-height: 18px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      border: 2px solid $based-cyan-3;
+    }
+  }
+
+  &:active {
+    &::before {
+      border: 2px solid rgba($black, 0.3);
     }
   }
 }

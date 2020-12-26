@@ -1,7 +1,7 @@
 .copyright {
   display: flex;
-  padding: 22px 20px 0 20px;
   justify-content: center;
+  padding: 22px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
@@ -12,8 +12,8 @@
 .copyright__text {
   @include list-reset;
   margin-right: 27px;
-  font-size: 19px;
   padding-top: 3px;
+  font-size: 19px;
 
   @media (min-width: $tablet-width) {
     padding-top: 5px;

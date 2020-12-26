@@ -1,12 +1,12 @@
 .text-input__input {
   position: relative;
+  display: block;
+  width: 100%;
+  padding: 16px 50px 13px 0;
   font-family: inherit;
   border: none;
   border-bottom: 2px solid $black;
-  display: block;
-  width: 100%;
   background: transparent;
-  padding: 16px 50px 13px 0;
   outline: none;
   cursor: pointer;
 
@@ -20,6 +20,10 @@
     border-bottom: 2px solid $based-cyan-3;
   }
 
+  &__textarea-wrapper {
+    background-color: white;
+  }
+
   &::placeholder {
     font-size: 17px;
     line-height: 18px;
@@ -31,19 +35,14 @@
       line-height: 18px;
       padding: 17px 50px 13px 18px;
     }
-
-    &__textarea-wrapper {
-      background-color: white;
-    }
   }
-
 }
 
 .text-input__textarea {
-  width: 100%;
-  border: 2px solid $black;
   display: block;
+  width: 100%;
   padding: 15px 15px 20px 15px;
+  border: 2px solid $black;
   resize: vertical;
   outline: none;
 
@@ -93,8 +92,6 @@
   &--tel,
   &--email,
   &--textarea {
-    font-size: 17px;
-    line-height: 18px;
     position: relative;
     display: block;
     width: 100%;
@@ -133,7 +130,6 @@
     &--email,
     &--textarea {
       width: 90px;
-      font-size: 17px;
       margin-right: 100px;
     }
   }
@@ -144,10 +140,12 @@
     &--tel,
     &--email {
       margin-right: 35px;
+      font-size: 17px;
     }
 
     &--textarea {
       margin-right: 34px;
+      font-size: 17px;
     }
   }
 }
@@ -167,10 +165,10 @@
 
   &--tel svg {
     position: absolute;
-    width: 25px;
-    height: 24px;
     right: 6px;
     top: 48%;
+    width: 25px;
+    height: 24px;
     transform: translateY(-50%);
     color: $black;
     opacity: 0.2;

@@ -26,7 +26,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 41px;
+      padding-top: 61px;
     }
   }
 
@@ -91,20 +91,20 @@
 .form__legend {
   position: relative;
   width: 100%;
-  font-weight: bold;
   margin-bottom: 37px;
   padding-top: 20px;
+  font-weight: bold;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   color: $based-cyan-2;
 
   @media (min-width: $tablet-width) {
+    width: 80px;
+    margin-bottom: 0;
     margin-right: 103px;
     font-size: 17px;
     line-height: 16px;
-    margin-bottom: 0;
-    width: 80px;
   }
 
   &--radio {

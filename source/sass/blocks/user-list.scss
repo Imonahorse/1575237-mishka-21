@@ -18,14 +18,14 @@
 
 .user-list__link {
   position: relative;
-  font-family: inherit;
-  color: currentColor;
   display: block;
-  padding: 28px 0 27px 46px;
   width: 260px;
   margin: 0 auto;
+  padding: 28px 0 27px 46px;
+  font-family: inherit;
   font-weight: bold;
   font-size: 17px;
+  color: currentColor;
   text-decoration: none;
 
   &--basket,

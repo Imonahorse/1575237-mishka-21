@@ -32,22 +32,22 @@
 
 .modal__title {
   @include list-reset;
+  margin-bottom: 14px;
+  padding-left: 57px;
+  padding-right: 40px;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 14px;
-  padding-left: 57px;
-  padding-right: 40px;
 }
 
 .modal__description {
   @include list-reset;
-  font-size: 15px;
-  line-height: 30px;
   margin-bottom: 20px;
   padding-left: 62px;
   padding-right: 20px;
+  font-size: 15px;
+  line-height: 30px;
 }
 
 .modal__list {

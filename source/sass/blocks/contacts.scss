@@ -8,23 +8,23 @@
   background-position: top;
 
   @media (min-width: $tablet-width) {
-    background-size: auto 17px;
     padding-bottom: 55px;
     padding-top: 86px;
+    background-size: auto 17px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
-    background-image: none;
     padding-bottom: 105px;
+    background-image: none;
   }
 }
 
 .contacts__link {
-  color: $based-gray-2;
-  border-bottom: 1px solid $based-cyan-3;
   padding-bottom: 2px;
   padding-right: 12px;
+  color: $based-gray-2;
+  border-bottom: 1px solid $based-cyan-3;
 
   &:hover {
     color: $based-cyan-4;
@@ -55,9 +55,9 @@
 
 .contacts__title {
   margin: 0 0 28px 0;
-  font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  font-weight: bold;
   color: $black;
 
   @media (min-width: $tablet-width) {
@@ -69,21 +69,21 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
-    font-size: 53px;
-    line-height: 57px;
     padding-top: 79px;
     margin-bottom: 20px;
     padding-right: 20px;
+    font-size: 53px;
+    line-height: 57px;
   }
 
   &::after {
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
-      width: 47px;
-      height: 81px;
       right: 3px;
       top: -23px;
+      width: 47px;
+      height: 81px;
       background-image: url("../img/flag.svg");
       background-repeat: no-repeat;
     }
@@ -105,15 +105,15 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 48px;
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
-    padding-right: 20px;
     align-self: start;
+    padding-right: 20px;
   }
 }
 
@@ -153,11 +153,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/4;
     width: 527px;
     height: 457px;
     margin: 0;
-    grid-column: 2/3;
-    grid-row: 1/4;
   }
 }
 

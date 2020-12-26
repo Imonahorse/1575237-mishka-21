@@ -51,10 +51,10 @@
 
   @media (min-width: $tablet-width) {
     order: -2;
+    width: 60%;
+    margin: 0 auto 39px 0;
     font-size: 43px;
     line-height: 50px;
-    margin: 0 auto 39px 0;
-    width: 60%;
   }
 
   @media (min-width: $desktop-width) {
@@ -77,9 +77,9 @@
 }
 
 .reviews__text {
+  margin-bottom: 33px;
   line-height: 30px;
   color: $based-gray-2;
-  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
@@ -122,17 +122,17 @@
   width: 260px;
   margin: 0 auto;
 
-  .reviews__button {
-    display: block;
-  }
-
   @media (min-width: $tablet-width) {
     margin: 0;
     order: -1;
     margin-top: -45px;
     width: 175px;
+  }
 
-    .reviews__button {
+  .reviews__button {
+    display: block;
+
+    @media (min-width: $tablet-width) {
       font-size: 17px;
     }
   }
