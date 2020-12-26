@@ -78,40 +78,76 @@
     background-position: center top;
   }
 
-  &--eco::after {
-    background-image: url("../img/icon-flower.svg");
+  &--eco {
+    &::after {
+      background-image: url("../img/icon-flower.svg");
+    }
+
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
   }
 
-  &--price::after {
-    background-image: url("../img/icon-money.svg");
+  &--price {
+    &::after {
+      background-image: url("../img/icon-money.svg");
+    }
+
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
   }
 
-  &--like::after {
-    background-image: url("../img/icon-heart.svg");
-    top: -51px;
+  &--like {
+    &::after {
+      background-image: url("../img/icon-heart.svg");
+      top: -51px;
+    }
+
+    @media (min-width: $tablet-width) {
+      order: 5;
+    }
   }
 
-  &--quality::after {
-    background-image: url("../img/icon-ball.svg");
+  &--quality {
+    &::after {
+      background-image: url("../img/icon-ball.svg");
+    }
+
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
   }
 
-  &--country::after {
-    background-image: url("../img/icon-rocket.svg");
-    top: -51px;
+  &--country {
+    &::after {
+      background-image: url("../img/icon-rocket.svg");
+      top: -51px;
+    }
+
+    @media (min-width: $tablet-width) {
+      order: 4;
+    }
   }
 
-  &--packaging::after {
-    background-image: url("../img/icon-gift.svg");
+  &--packaging {
+    &::after {
+      background-image: url("../img/icon-gift.svg");
+    }
+
+    @media (min-width: $tablet-width) {
+      order: 6;
+    }
   }
 
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 22px;
     width: 320px;
     margin: 0;
     margin-bottom: 110px;
     margin-right: auto;
+    font-size: 20px;
+    line-height: 22px;
 
     &:nth-child(3n+3) {
       margin-bottom: 0;
@@ -121,41 +157,5 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 110px;
     margin-right: 29px;
-  }
-
-  &--eco {
-    @media (min-width: $tablet-width) {
-      order: 1;
-    }
-  }
-
-  &--price {
-    @media (min-width: $tablet-width) {
-      order: 3;
-    }
-  }
-
-  &--like {
-    @media (min-width: $tablet-width) {
-      order: 5;
-    }
-  }
-
-  &--quality {
-    @media (min-width: $tablet-width) {
-      order: 2;
-    }
-  }
-
-  &--country {
-    @media (min-width: $tablet-width) {
-      order: 4;
-    }
-  }
-
-  &--packaging {
-    @media (min-width: $tablet-width) {
-      order: 6;
-    }
   }
 }

@@ -12,7 +12,8 @@
   width: 320px;
   top: 50%;
   left: 50%;
-  bottom: auto;
+  padding-top: 28px;
+  padding-bottom: 46px;
   transform: translateX(-50%) translateY(-50%);
   border: 1px solid $based-gray-7;
   background-color: $white;
@@ -29,11 +30,6 @@
   }
 }
 
-.modal__wrapper {
-  padding-top: 28px;
-  padding-bottom: 46px;
-}
-
 .modal__title {
   @include list-reset;
   font-weight: bold;
@@ -41,27 +37,27 @@
   line-height: 30px;
   text-transform: uppercase;
   margin-bottom: 14px;
-  text-align: center;
+  padding-left: 57px;
+  padding-right: 40px;
 }
 
 .modal__description {
   @include list-reset;
   font-size: 15px;
   line-height: 30px;
-  margin-bottom: 22px;
-  text-align: center;
+  margin-bottom: 20px;
+  padding-left: 62px;
+  padding-right: 20px;
 }
 
 .modal__list {
   @include list-reset;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 31px;
+  margin-bottom: 28px;
 }
 
 .modal__item {
-  width: 82px;
-  height: 52px;
   border: 2px solid rgba($based-gray-2, 0.1);
 
   &:focus {
@@ -76,8 +72,7 @@
 .modal__label {
   display: block;
   border: 2px solid $based-gray-2;
-  padding: 18px 21px;
-  text-align: center;
+  padding: 12px 34px;
   cursor: pointer;
 }
 
