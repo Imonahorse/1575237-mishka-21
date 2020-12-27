@@ -61,3 +61,7 @@
     box-shadow: inset 0 0 0 14px #ffffff, inset 0 0 0 30px #62d1ba;
   }
 }
+
+.radio__input:focus + .radio__span::before {
+  border: 2px solid $based-cyan-3;
+}

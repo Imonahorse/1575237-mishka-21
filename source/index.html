@@ -16,7 +16,7 @@
       <button class="main-nav__toggle button" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
-      <a href="#" class="main-nav__logo">
+      <a class="main-nav__logo main-nav__logo--index">
         <picture>
           <source media="(min-width:1150px)" srcset="img/mishka-logo-desktop.svg">
           <source media="(min-width:768px)" srcset="img/mishka-logo-tablet.svg">
@@ -39,8 +39,8 @@
       </ul>
       <ul class="main-nav__user-list user-list">
         <li class="user-list__item user-list__item--search">
-          <a href="" class="user-list__link user-list__link--search">
-            <svg width="18" height="18">
+          <a href="" class="user-list__link user-list__link--search" aria-label="Поиск по сайту">
+            <svg width="18" height="18" aria-hidden="true">
               <use xlink:href="img/sprite.svg#icon-search"></use>
             </svg>
             <span>Поиск по сайту</span>
@@ -48,7 +48,7 @@
         </li>
         <li class="user-list__item user-list__item--basket">
           <a href="" class="user-list__link user-list__link--basket">
-            <svg width="20" height="19">
+            <svg width="20" height="19" aria-hidden="true">
               <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
             <span>Корзина: пока пуста</span>
@@ -70,11 +70,17 @@
         <li class="intro__item">
           <a class="intro__link intro__link--interior-items" href="#">
             <span>Предметы<br> интерьера</span>
+            <svg width="40" height="62">
+              <use xlink:href="./img/sprite.svg#icon-interior"></use>
+            </svg>
           </a>
         </li>
         <li class="intro__item">
           <a class="intro__link intro__link--toys" href="#">
             <span>Детские<br> игрушки</span>
+            <svg width="60" height="60">
+              <use xlink:href="./img/sprite.svg#icon-toy"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -189,13 +195,12 @@
           <dd class="contacts__definition">г. Санкт-Петербург<br> ул. Большая Конюшенная<br> д. 19/8, офис 101</dd>
         </div>
       </dl>
-      <a href="#" class="contacts__map">
-        <picture>
-          <source media="(min-width:1150px)" srcset="./img/map-desktop@1x.png 1x, ./img/map-desktop@2x.png 2x">
-          <source media="(min-width:768px)" srcset="./img/map-tablet@1x.png 1x, ./img/map-tablet@2x.png 2x">
-          <img src="./img/map-mobile@1x.png" srcset="./img/map-mobile@2x.png 2x" alt="Наш адрес на карте">
-        </picture>
-      </a>
+      <div class="contacts__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1609011802371!5m2!1sru!2sru"
+          frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="true" tabindex="0">
+        </iframe>
+      </div>
       <a class="contacts__button button button--primary" href="#">Напишите нам</a>
     </div>
   </section>
@@ -204,29 +209,29 @@
 <footer class="page-footer">
   <div class="page-footer__wrapper wrapper">
     <div class="page-footer__logo-wrapper">
-      <a href="#" class="page-footer__logo">
-        <svg width="102" height="34">
+      <a href="#" class="page-footer__logo" aria-label="Логотип сайта">
+        <svg width="102" height="34" aria-hidden="true">
           <use xlink:href="./img/sprite.svg#icon-footer-logo"></use>
         </svg>
       </a>
     </div>
     <ul class="page-footer__social social">
       <li class="social__item">
-        <a class="social-link social__link--instagram" href="https://www.instagram.com/">
-          <svg width="22" height="22">
+        <a class="social-link social__link--instagram" href="https://www.instagram.com/" aria-label="Инстаграм">
+          <svg width="22" height="22" aria-hidden="true">
             <use xlink:href="img/sprite.svg#icon-insta"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a class="social-link social__link--facebook" href="https://www.facebook.com/">
-          <svg width="15" height="28">
+        <a class="social-link social__link--facebook" href="https://www.facebook.com/" aria-label="Фейсбук">
+          <svg width="15" height="28" aria-hidden="true">
             <use xlink:href="img/sprite.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a class="social-link social__link--twitter" href="https://www.twitter.com/">
+        <a class="social-link social__link--twitter" href="https://www.twitter.com/" aria-label="Твиттер">
           <svg width="23" height="20">
             <use xlink:href="img/sprite.svg#icon-twitter"></use>
           </svg>
@@ -237,15 +242,14 @@
       <p class="copyright__text">
         <b>Разработано</b>
       </p>
-      <a href="" class="copyright__link">
+      <a href="" class="copyright__link" aria-label="Перейти на сайт Академии">
         <svg width="27" height="35">
-          <use xlink:href="img/sprite.svg#icon-academy"></use>
+          <use xlink:href="img/sprite.svg#icon-academy" aria-hidden="true"></use>
         </svg>
       </a>
     </div>
   </div>
 </footer>
-
 
 <section class="modal modal__order modal__order--close">
   <div class="modal__wrapper wrapper">

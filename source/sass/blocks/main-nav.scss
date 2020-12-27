@@ -1,9 +1,11 @@
 .main-nav__wrapper {
+  max-width: none;
   position: relative;
   margin: 0 auto;
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
+    max-width: 1150px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -29,8 +31,14 @@
     opacity: 0.3;
   }
 
+  &--index {
+    &:hover,
+    &:active {
+      opacity: 1;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    display: block;
     margin-left: -2px;
     padding: 22px 0 21px 0;
   }
@@ -103,9 +111,26 @@
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+  transition: none;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.main-nav--opened {
+  animation: open 3s;
+
+  @media (min-width: $tablet-width) {
+    animation: none;
+  }
+}
+
+.main-nav--closed {
+  animation: close 3s;
+
+  @media (min-width: $tablet-width) {
+    animation: none;
   }
 }
 
@@ -134,5 +159,25 @@
 
 .main-nav--nojs .main-nav__site-list,
 .main-nav--nojs .main-nav__user-list {
-  display: block;
+  display: flex;
+}
+
+@keyframes open {
+  0% {
+    height: 79px;
+    overflow:hidden;
+  }
+  100% {
+    height: 395px;
+    overflow:hidden;
+  }
+}
+
+@keyframes close {
+  0% {
+    height: 395px;
+  }
+  100% {
+    height: 79px;
+  }
 }

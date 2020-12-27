@@ -64,3 +64,7 @@
     background-size: 33px 23px;
   }
 }
+
+.checkbox__input:focus + .checkbox__span::before {
+    border: 2px solid $based-cyan-3;
+}

@@ -135,19 +135,24 @@
     margin-right: 5px;
   }
 
+  &:focus {
+    svg {
+      color: $based-cyan-2;
+      opacity: 1;
+    }
+  }
+
   svg {
     color: $black;
     opacity: 0.2;
 
-
-    &:hover,
-    &:focus {
-      color:$based-cyan-2;
+    &:hover {
+      color: $based-cyan-2;
       opacity: 1;
     }
 
     &:active {
-      color:$based-cyan-2;
+      color: $based-cyan-2;
       opacity: 0.2;
     }
   }

@@ -13,6 +13,11 @@
   &--tel,
   &--email {
     padding: 18px 50px 16px 0;
+
+    &:focus + svg {
+      color: $based-cyan-3;
+      opacity: 1;
+    }
   }
 
   &:hover,
@@ -155,8 +160,7 @@
   position: relative;
   width: 100%;
 
-  &:hover,
-  &:focus {
+  &:hover {
     svg {
       color: $based-cyan-3;
       opacity: 1;

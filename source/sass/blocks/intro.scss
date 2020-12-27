@@ -44,8 +44,8 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/intro-mobile@2x.jpg");
-    background-size: 100% auto;
-    background-position: 0;
+    background-size: contain;
+    background-position: center -17%;
   }
 
   @media (min-width: $tablet-width) {
@@ -105,7 +105,6 @@
   @media (min-width: $tablet-width) {
     width: 50%;
     min-height: 100%;
-    transition: 1s;
 
     .intro__link--interior-items {
       box-shadow: 0 5px 0 0 $based-cyan-5;
@@ -114,36 +113,19 @@
     .intro__link--toys {
       box-shadow: 0 5px 0 0 $based-cyan-4;
     }
-
-    &:hover {
-      transform: translateY(-5px);
-      transition: 0.5s;
-
-      .intro__link--interior-items {
-        background-color: $based-cyan-5;
-      }
-
-      .intro__link--toys {
-        background-color: $based-cyan-4;
-      }
-    }
   }
 }
 
 .intro__link {
   position: relative;
-  display: block;
+  display: flex;
   margin: 0 -30px;
   padding: 24px 0 31px 30px;
   font-weight: bold;
   text-decoration: none;
   font-size: 19px;
   color: $based-gray-1;
-
-  span {
-    display: block;
-    width: 60%;
-  }
+  transition: 1s;
 
   @media (min-width: $tablet-width) {
     line-height: 30px;
@@ -159,40 +141,71 @@
   }
 
 
+  &--interior-items svg {
+    position: absolute;
+    right: 35px;
+    top: 23px;
+    color: $based-cyan-6;
+    opacity: 0.5;
+    transition: 1s;
+
+    @media (min-width: $tablet-width) {
+      right: 35px;
+      top: 30px;
+    }
+  }
+
+  &--toys svg {
+    position: absolute;
+    right: 26px;
+    top: 21px;
+    color: $based-cyan-6;
+    opacity: 0.5;
+    transition: 1s;
+
+    @media (min-width: $tablet-width) {
+      right: 35px;
+      top: 30px;
+    }
+  }
+
+  span {
+    display: block;
+    width: 60%;
+    margin-right: auto;
+  }
+
   &--interior-items {
     background-color: $based-cyan-2;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: 36px;
-      width: 40px;
-      height: 62px;
-      background-image: url("../../img/interior.svg");
-      background-repeat: no-repeat;
-      transform: translateY(-50%);
-    }
   }
 
   &--toys {
     background-color: $based-cyan-1;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      top: 50%;
-      right: 27px;
-      transform: translateY(-50%);
-      background-image: url("../../img/toy.svg");
-      background-repeat: no-repeat;
+  &:hover,
+  &:focus {
+    @media (min-width: $tablet-width) {
+      transform: translateY(-5px);
+      transition: 0.5s;
 
-      @media (min-width: $tablet-width) {
-        top: 59px;
-        right: 35px;
+      .intro__link--interior-items {
+        background-color: $based-cyan-5;
+      }
+
+      .intro__link--toys {
+        background-color: $based-cyan-4;
       }
     }
+
+    svg {
+      opacity: 0.7;
+      transition: 1s;
+    }
+  }
+
+  &:active svg {
+    opacity: 0.3;
+    transition: 1s;
   }
 }
