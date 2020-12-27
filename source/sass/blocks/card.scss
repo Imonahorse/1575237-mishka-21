@@ -3,50 +3,71 @@
   display: flex;
   flex-direction: column;
   padding-top: 30px;
-  padding-bottom: 35px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    align-items: start;
+    align-items: end;
     grid-template-columns: 1fr 1fr;
-    padding-top: 40px;
+    padding-top: 55px;
     padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: auto 525px;
-    padding-top: 54px;
-    padding-bottom: 73px;
+    padding-top: 70px;
+    padding-bottom: 90px;
     padding-left: 175px;
+
+    background-image: url("../img/small-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: auto 23px;
+    background-position: bottom;
+  }
+}
+
+.card__title-wrapper {
+  position: relative;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/3;
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/2;
+    margin-bottom: 35px;
+    padding-top: 64px;
   }
 }
 
 .card__status {
-  margin-bottom: 17px;
-  font-weight: bold;
-  text-transform: uppercase;
   font-size: 17px;
   line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
   color: $based-cyan-2;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: 0;
-    top: 10px;
-    margin: 0;
+    right: 13px;
+    top: 3px;
     width: 100px;
+    margin: 0;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    left: -150px;
+    left: -145px;
+    top: 69px;
     right: auto;
   }
 }
 
 .card__title {
-  position: relative;
   margin: 0;
+  margin-bottom: 2px;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
@@ -59,29 +80,28 @@
     padding-right: 130px;
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     font-size: 53px;
     line-height: 57px;
-    grid-row: 1/2;
   }
 }
 
 .card__description {
-  margin: 0 0 28px 0;
+  margin: 0 0 18px 0;
   color: $based-gray-2;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+    margin-bottom: 37px;
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 60px;
+    margin-bottom: 47px;
   }
 }
 
@@ -91,58 +111,70 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+    margin-bottom: 57px;
     padding-right: 42px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 109px;
+    margin-bottom: 112px;
     padding-right: 58px;
   }
 }
 
 .card__item {
   display: flex;
-  padding: 8px 0;
+  min-height: 20px;
+  padding: 9px 0 10px 0;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 21px;
   color: $based-gray-2;
   border-bottom: 1px solid $based-gray-1;
-  min-height: 20px;
 }
 
 .card__term {
   width: 20%;
 }
 
+.card__definition {
+  margin-left: 46px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 39px;
+  }
+}
+
 .card__price {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   text-align: center;
-  font-weight: bold;
   font-size: 17px;
+  font-weight: bold;
   color: $based-gray-2;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+    margin-bottom: 34px;
+    padding-left: 72px;
+    text-align: start;
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 33px;
   }
 }
 
 .card__button {
+  display: block;
   width: 260px;
   margin: 0 auto;
-  display: block;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     width: auto;
     margin: 0 42px 0 0;
+    font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {
-    align-self: flex-end;
+    align-self: flex-start;
     width: auto;
     margin: 0 58px 0 0;
   }
@@ -151,24 +183,24 @@
 .card__picture {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 
   @media (min-width: $tablet-width) {
-    object-fit: contain;
+    object-fit: cover;
   }
 }
 
 .card__picture-wrapper {
-  height: 260px;
-  margin-bottom: 25px;
+  height: 315px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
     grid-column: 2/3;
     grid-row: 2/6;
     height: 404px;
     margin: 0;
-    display: flex;
-    justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {

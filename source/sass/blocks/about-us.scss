@@ -1,6 +1,6 @@
 .about-us {
-  padding-top: 30px;
-  padding-bottom: 60px;
+  padding-top: 38px;
+  padding-bottom: 38px;
 
   background-image: url("../img/small-zigzag-line.svg");
   background-repeat: repeat-x;
@@ -8,12 +8,13 @@
 
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 80px;
+    padding-top: 75px;
+    padding-bottom: 82px;
     background-size: auto 17px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 68px;
+    padding-top: 70px;
     padding-bottom: 90px;
     background-image: none;
   }
@@ -21,16 +22,13 @@
 
 .about-us__wrapper {
   @media (min-width: $desktop-width) {
-    padding-left: 175px;
-    background-image: url("../img/small-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-size: 1050px 23px;
+    padding-left: 225px;
   }
 }
 
 .about-us__title {
   position: relative;
-  margin: 0 0 82px 0;
+  margin: 0 0 83px 0;
   font-family: $default-font;
   font-weight: bold;
   font-size: 25px;
@@ -40,6 +38,7 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 98px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,14 +52,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
-  :last-child {
-    margin: 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    justify-content: space-between;
-  }
 }
 
 .about-us__item {
@@ -72,83 +63,96 @@
   line-height: 20px;
   color: $black;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 320px;
+    margin: 0;
+    margin-bottom: 110px;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 22px;
+
+    &:nth-child(3n+3) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 110px;
+    margin-right: 29px;
+  }
+
   &::after {
     content: "";
     position: absolute;
     width: 55px;
     height: 38px;
-    top: -50px;
-    left: 0;
+    top: -55px;
+    left: -4px;
     background-repeat: no-repeat;
-  }
-
-  &--eco::after {
-    background-image: url("../img/icon-flower.svg");
-  }
-
-  &--price::after {
-    background-image: url("../img/icon-money.svg");
-  }
-
-  &--like::after {
-    background-image: url("../img/icon-heart.svg");
-  }
-
-  &--quality::after {
-    background-image: url("../img/icon-ball.svg");
-  }
-
-  &--country::after {
-    background-image: url("../img/icon-rocket.svg");
-  }
-
-  &--packaging::after {
-    background-image: url("../img/icon-gift.svg");
-  }
-
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 22px;
-    width: 40%;
-    margin-bottom: 110px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 110px;
+    background-position: center top;
   }
 
   &--eco {
+    &::after {
+      background-image: url("../img/icon-flower.svg");
+    }
+
     @media (min-width: $tablet-width) {
       order: 1;
     }
   }
 
   &--price {
+    &::after {
+      background-image: url("../img/icon-money.svg");
+    }
+
     @media (min-width: $tablet-width) {
       order: 3;
     }
   }
 
   &--like {
+    &::after {
+      background-image: url("../img/icon-heart.svg");
+      top: -51px;
+    }
+
     @media (min-width: $tablet-width) {
       order: 5;
     }
   }
 
   &--quality {
+    &::after {
+      background-image: url("../img/icon-ball.svg");
+    }
+
     @media (min-width: $tablet-width) {
       order: 2;
     }
   }
 
   &--country {
+    &::after {
+      background-image: url("../img/icon-rocket.svg");
+      top: -51px;
+    }
+
     @media (min-width: $tablet-width) {
       order: 4;
     }
   }
 
   &--packaging {
+    &::after {
+      background-image: url("../img/icon-gift.svg");
+    }
+
     @media (min-width: $tablet-width) {
       order: 6;
     }

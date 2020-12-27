@@ -3,19 +3,39 @@
 }
 
 .page-footer__wrapper {
+  padding-top: 25px;
+  padding-bottom: 23px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-top: 51px;
+    padding-bottom: 58px;
   }
 }
 
-.page-footer__logo {
+.page-footer__logo-wrapper {
   display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding: 60px 0;
     width: 33%;
+  }
+}
+
+.page-footer__logo {
+  display: inline-block;
+  vertical-align: middle;
+  color: $black;
+
+  &:hover svg,
+  &:focus svg {
+    color: $based-cyan-4;
+  }
+
+  &:active svg {
+    color: $based-cyan-4;
+    opacity: 0.3;
   }
 }
 

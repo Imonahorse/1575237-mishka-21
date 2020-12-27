@@ -1,51 +1,59 @@
 .form-intro {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
   @media (min-width: $tablet-width) {
     margin-top: -45px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -90px;
+    margin-top: -75px;
   }
 }
 
 .form-intro__title {
   @include list-reset;
-  background-color: $based-gray-3;
   padding: 73px 0;
   margin: 0 auto;
   text-align: center;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
+  background-color: $based-gray-3;
 
   @media (min-width: $tablet-width) {
+    padding: 101px 0 85px 0;
+    margin: 0 auto;
     font-size: 43px;
     line-height: 50px;
-    padding: 101px 0 75px 0;
-    margin: 0 auto 54px auto;
+    background-image: url("../img/big-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: auto 24px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 102px 0 110px 0;
+    margin: 0 auto;
     font-size: 53px;
     line-height: 57px;
-    padding: 102px 0 95px 0;
-    margin: 0 auto 100px auto;
+    background-size: auto 34px;
   }
 }
 
 .form-intro__description {
   padding-top: 17px;
+  padding-bottom: 10px;
   font-size: 13px;
   color: $based-gray-2;
-  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 20px;
     font-size: 17px;
-    line-height: 24px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 220px;
-    padding-right: 220px;
+    padding: 102px 220px 0 225px;
   }
 }

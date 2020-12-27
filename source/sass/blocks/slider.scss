@@ -11,15 +11,29 @@
   display: flex;
   margin-bottom: 38px;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .slider__button {
   display: block;
   width: 50%;
-  padding: 13px 42px 13px 38px;
-  border: 1px solid #ececec;
+  padding: 12px 42px 10px 38px;
+  border: 1px solid $based-gray-1;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 12px 0 10px 0;
   }
 }
