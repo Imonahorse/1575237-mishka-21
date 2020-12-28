@@ -8,7 +8,7 @@
   background-color: transparent;
   border: none;
   border-radius: 0;
-  transition: 0.5s;
+  transition: $transition-fast;
 
   &--primary {
     padding: 14px 20px;

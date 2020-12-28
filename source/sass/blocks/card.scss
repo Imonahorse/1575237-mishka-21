@@ -206,5 +206,6 @@
   @media (min-width: $desktop-width) {
     grid-row: 1/6;
     height: auto;
+    justify-content: flex-start;
   }
 }

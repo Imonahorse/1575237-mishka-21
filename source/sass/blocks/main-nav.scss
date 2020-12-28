@@ -119,7 +119,7 @@
 }
 
 .main-nav--opened {
-  animation: open 3s;
+  animation: open $transition-fast;
 
   @media (min-width: $tablet-width) {
     animation: none;
@@ -127,7 +127,7 @@
 }
 
 .main-nav--closed {
-  animation: close 3s;
+  animation: close $transition-fast;
 
   @media (min-width: $tablet-width) {
     animation: none;
