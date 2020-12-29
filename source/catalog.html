@@ -69,6 +69,7 @@
   </section>
 
   <section class="catalog">
+    <h2 class="visually-hidden">Раздел с описанием и ценой товаров.</h2>
     <div class="catalog__wrapper wrapper">
       <ul class="catalog__list">
         <li class="catalog__item">
@@ -83,9 +84,9 @@
             </a>
             <div class="product-card__wrapper" tabindex="0">
               <a href="" class="product-card__title-link">
-                <h2 class="product-card__title">
+                <h3 class="product-card__title">
                   Зайчик-попрыгайчик
-                </h2>
+                </h3>
               </a>
               <p class="product-card__description">Рост 30 см, вес 200 г</p>
               <div class="product-card__buy">
@@ -111,9 +112,9 @@
             </a>
             <div class="product-card__wrapper" tabindex="0">
               <a href="#" class="product-card__title-link">
-                <h2 class="product-card__title">
+                <h3 class="product-card__title">
                   Корзинка для белья
-                </h2>
+                </h3>
               </a>
               <p class="product-card__description">Диаметр 15 см, высота 10 см</p>
               <div class="product-card__buy">
@@ -139,9 +140,9 @@
             </a>
             <div class="product-card__wrapper" tabindex="0">
               <a href="" class="product-card__title-link">
-                <h2 class="product-card__title">
+                <h3 class="product-card__title">
                   Большая корзинка для&nbsp;игрушек
-                </h2>
+                </h3>
               </a>
               <p class="product-card__description">Диаметр 30 см, высота 30 см</p>
               <div class="product-card__buy">
@@ -223,7 +224,7 @@
       <p class="copyright__text">
         <b>Разработано</b>
       </p>
-      <a href="" class="copyright__link" aria-label="Перейти на сайт Академии">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" aria-label="Перейти на сайт Академии">
         <svg width="27" height="35">
           <use xlink:href="img/sprite.svg#icon-academy" aria-hidden="true"></use>
         </svg>
@@ -231,6 +232,41 @@
     </div>
   </div>
 </footer>
+
+<section class="modal modal--close">
+  <div class="modal__wrapper">
+    <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+    <p class="modal__description">Выберите размер:</p>
+    <form action="https://echo.htmlacademy.ru" class="modal__form">
+      <ul class="modal__list">
+        <li class="modal__item">
+          <label class="modal__label">
+            <input class="modal__input visually-hidden" type="radio" name="size" value="S">
+            <span class="modal__span">
+              S
+            </span>
+          </label>
+        </li>
+        <li class="modal__item">
+          <label class="modal__label">
+            <input class="modal__input visually-hidden" type="radio" name="size" value="M">
+            <span class="modal__span">
+              M
+            </span>
+          </label>
+        </li>
+        <li class="modal__item"><label class="modal__label">
+          <input class="modal__input visually-hidden" type="radio" name="size" value="L">
+          <span class="modal__span">
+            L
+          </span>
+        </label>
+        </li>
+      </ul>
+      <button class="modal__button button--primary" type="submit">Добавить</button>
+    </form>
+  </div>
+</section>
 
 <script src="./js/script.min.js"></script>
 

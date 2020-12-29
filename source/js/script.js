@@ -15,37 +15,47 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-// modal
 
+// catalog modal
+
+const catalogButton = document.querySelectorAll('.product-card__to-basket');
 const orderButton = document.querySelector('.card__button');
 const modalButton = document.querySelector('.modal__button');
-const orderPopup = document.querySelector('.modal__order');
-const modalItem = document.querySelector('.modal__item--current');
+const orderPopup = document.querySelector('.modal');
 
+for (var i = 0; i < catalogButton.length; i++) {
+  catalogButton[i].addEventListener('click', function (evt) {
+    evt.preventDefault();
+    orderPopup.classList.add('modal--open');
+    console.log('клик')
+  });
+}
+
+orderPopup.addEventListener('click', (evt) => {
+  if (evt.target.classList.contains('modal')) {
+    orderPopup.classList.remove('modal--open');
+    orderPopup.classList.add('modal--close');
+  }
+});
+
+modalButton.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  orderPopup.classList.remove('modal--open');
+  orderPopup.classList.add('modal--close');
+});
+
+// index modal
 
 orderButton.addEventListener('click', function (evt) {
   evt.preventDefault();
-  orderPopup.classList.remove('modal__order--close');
-  orderPopup.classList.add('modal__order--open');
+  orderPopup.classList.remove('modal--close');
+  orderPopup.classList.add('modal--open');
   modalItem.focus();
 });
 
-modalButton.addEventListener("click", function (evt) {
+modalButton.addEventListener('click', function (evt) {
   evt.preventDefault();
-  orderPopup.classList.remove("modal__order--open");
-  orderPopup.classList.add("modal__order--close");
+  orderPopup.classList.remove('modal--open');
+  orderPopup.classList.add('modal--close');
 });
-
-// slider
-
-const sliderButtonLeft = document.querySelectorAll(".slider__button--left");
-const sliderButtonRight = document.querySelectorAll(".slider__button--right");
-const sliderItem = document.querySelector(".slider__item");
-const sliderCurrent = document.querySelector(".slider__item--current");
-
-  sliderButtonLeft.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    sliderCurrent.classList.remove("slider__item--current");
-    sliderItem.classList.add("slider__item--current");
-  });
 

@@ -1,6 +1,7 @@
 .social {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
   padding-bottom: 22px;
   padding-left: 60px;
   padding-right: 60px;

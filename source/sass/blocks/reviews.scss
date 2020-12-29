@@ -39,6 +39,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/review-desktop-back@2x.png");
+      background-size: 350px auto;
     }
   }
 }
@@ -146,7 +147,7 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     position: absolute;
-    top: 273px;
+    bottom: 9%;
     right: 2px;
     border: none;
     width: 171px;
@@ -154,7 +155,6 @@
 
   @media (min-width: $desktop-width) {
     right: 2px;
-    top: 308px;
-    bottom: auto;
+    bottom: 32%;
   }
 }

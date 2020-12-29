@@ -88,7 +88,8 @@
   }
 }
 
-.form__legend {
+.form__title {
+  margin: 0;
   position: relative;
   width: 100%;
   margin-bottom: 37px;
@@ -100,7 +101,7 @@
   color: $based-cyan-2;
 
   @media (min-width: $tablet-width) {
-    width: 80px;
+    width: 150px;
     margin-bottom: 0;
     margin-right: 103px;
     font-size: 17px;
@@ -111,10 +112,11 @@
     margin-bottom: 35px;
 
     @media (min-width: $tablet-width) {
-      margin-right: 70px;
+      margin-right: 35px;
     }
 
     @media (min-width: $desktop-width) {
+      width: 88px;
       margin-right: 17px;
     }
   }
@@ -123,10 +125,11 @@
     margin-bottom: 25px;
 
     @media (min-width: $tablet-width) {
-      margin-right: 87px;
+      margin-right: 55px;
     }
 
     @media (min-width: $desktop-width) {
+      width: 91px;
       margin-right: 34px;
     }
   }
@@ -135,10 +138,11 @@
     margin-bottom: 29px;
 
     @media (min-width: $tablet-width) {
-      margin-right: 88px;
+      margin-right: 53px;
     }
 
     @media (min-width: $desktop-width) {
+      width: 93px;
       margin-right: 36px;
     }
   }

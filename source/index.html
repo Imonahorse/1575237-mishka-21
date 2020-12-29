@@ -198,7 +198,7 @@
       <div class="contacts__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1609011802371!5m2!1sru!2sru"
-           allowfullscreen="">
+           allowfullscreen="" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </iframe>
       </div>
       <a class="contacts__button button button--primary" href="#">Напишите нам</a>
@@ -242,7 +242,7 @@
       <p class="copyright__text">
         <b>Разработано</b>
       </p>
-      <a href="" class="copyright__link" aria-label="Перейти на сайт Академии">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" aria-label="Перейти на сайт Академии">
         <svg width="27" height="35">
           <use xlink:href="img/sprite.svg#icon-academy" aria-hidden="true"></use>
         </svg>
@@ -251,28 +251,37 @@
   </div>
 </footer>
 
-<section class="modal modal__order modal__order--close">
-  <div class="modal__wrapper wrapper">
+<section class="modal modal--close">
+  <div class="modal__wrapper">
     <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
     <p class="modal__description">Выберите размер:</p>
     <form action="https://echo.htmlacademy.ru" class="modal__form">
       <ul class="modal__list">
-        <li class="modal__item modal__item--current">
+        <li class="modal__item">
           <label class="modal__label">
-            <input type="radio" class="visually-hidden" name="size" value="S">S
+            <input class="modal__input visually-hidden" type="radio" name="size" value="S">
+            <span class="modal__span">
+              S
+            </span>
           </label>
         </li>
         <li class="modal__item">
           <label class="modal__label">
-            <input type="radio" class="visually-hidden" name="size" value="M">M
+            <input class="modal__input visually-hidden" type="radio" name="size" value="M">
+            <span class="modal__span">
+              M
+            </span>
           </label>
         </li>
         <li class="modal__item"><label class="modal__label">
-          <input type="radio" class="visually-hidden" name="size" value="L">L
+          <input class="modal__input visually-hidden" type="radio" name="size" value="L">
+          <span class="modal__span">
+            L
+          </span>
         </label>
         </li>
       </ul>
-      <button class="modal__button button button--green" type="submit">Добавить</button>
+      <button class="modal__button button--primary" type="submit">Добавить</button>
     </form>
   </div>
 </section>
