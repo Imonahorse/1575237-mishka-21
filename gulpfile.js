@@ -16,7 +16,6 @@ const gulpif = require("gulp-if")
 const sync = require("browser-sync").create();
 
 const isProd = process.argv.includes('build');
-console.log(isProd)
 
 const config = {
   src: './source/',
@@ -49,6 +48,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(gulp.dest(config.dist + config.css.dest))
     .pipe(postcss([
       autoprefixer(),
       csso()
@@ -81,7 +81,6 @@ const scripts = () => {
 
 exports.scripts = scripts;
 
-
 // Image
 
 const images = () => {
@@ -105,7 +104,6 @@ const createWebp = () => {
 }
 
 exports.createWebp = createWebp;
-
 
 // Sprite
 

@@ -5,20 +5,7 @@
   right: 0;
   bottom: 0;
   margin: auto;
-  z-index: 2;
-}
-
-.modal__order {
-  width: 320px;
-  top: 50%;
-  left: 50%;
-  padding-top: 28px;
-  padding-bottom: 46px;
-  transform: translateX(-50%) translateY(-50%);
-  border: 1px solid $based-gray-7;
-  background-color: $white;
-  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
-
+  z-index: 50;
 
   &--close {
     display: none;
@@ -26,15 +13,33 @@
 
   &--open {
     display: block;
-    animation: bounce 0.6s;
+    animation: bounce $transition-fast;
+    background-color: rgba($white, 0.9);
+  }
+}
+
+.modal__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  padding: 28px 30px 46px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  border: 1px solid $based-gray-7;
+  background-color: $white;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+    padding: 37px 108px 46px;
   }
 }
 
 .modal__title {
-  @include list-reset;
+  margin: 0;
   margin-bottom: 14px;
-  padding-left: 57px;
-  padding-right: 40px;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
@@ -42,10 +47,8 @@
 }
 
 .modal__description {
-  @include list-reset;
-  margin-bottom: 20px;
-  padding-left: 62px;
-  padding-right: 20px;
+  margin: 0;
+  margin-bottom: 21px;
   font-size: 15px;
   line-height: 30px;
 }
@@ -54,14 +57,20 @@
   @include list-reset;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 }
 
-.modal__item {
+.modal__span {
+  width: 80px;
+  height: 52px;
+  display: block;
+  padding: 12px;
+  cursor: pointer;
+  text-align: center;
   border: 2px solid rgba($based-gray-2, 0.1);
 
-  &:focus {
-    border: 2px solid $based-cyan-2;
+  @media (min-width: $tablet-width) {
+    width: 112px;
   }
 
   &:hover {
@@ -69,38 +78,21 @@
   }
 }
 
-.modal__label {
-  display: block;
-  border: 2px solid $based-gray-2;
-  padding: 12px 34px;
-  cursor: pointer;
+.modal__input:checked + .modal__span,
+.modal__input:focus + .modal__span {
+  border: 2px solid $based-cyan-2;
 }
 
 .modal__button {
   display: block;
   width: 100%;
   padding: 18px 10px;
+  font-size: 17px;
   color: $white;
   background-color: $based-cyan-2;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(-2000px);
-    opacity: 0;
-  }
-
-  70% {
-    transform: translateY(30px);
-    opacity: 0.7;
-  }
-
-  90% {
-    transform: translateY(-10px);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}

@@ -44,7 +44,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/intro-mobile@2x.jpg");
-    background-size: contain;
+    background-size: 320px auto;
     background-position: center -17%;
   }
 
@@ -54,6 +54,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/intro-tablet@2x.jpg");
+      background-size: 768px auto;
     }
   }
 
@@ -63,6 +64,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/intro-desktop@2x.jpg");
+      background-size: 1150px auto;
     }
   }
 }
@@ -104,14 +106,14 @@
 .intro__item {
   @media (min-width: $tablet-width) {
     width: 50%;
-    min-height: 100%;
+    height: auto;
 
     .intro__link--interior-items {
-      box-shadow: 0 5px 0 0 $based-cyan-5;
+      box-shadow: 0 10px $based-cyan-5;
     }
 
     .intro__link--toys {
-      box-shadow: 0 5px 0 0 $based-cyan-4;
+      box-shadow: 0 10px $based-cyan-4;
     }
   }
 }
@@ -119,13 +121,14 @@
 .intro__link {
   position: relative;
   display: flex;
+  height: 100%;
   margin: 0 -30px;
   padding: 24px 0 31px 30px;
   font-weight: bold;
   text-decoration: none;
   font-size: 19px;
   color: $based-gray-1;
-  transition: 1s;
+  transition:  transform $transition-fast;
 
   @media (min-width: $tablet-width) {
     line-height: 30px;
@@ -140,33 +143,19 @@
     line-height: 30px;
   }
 
-
-  &--interior-items svg {
-    position: absolute;
-    right: 35px;
-    top: 23px;
-    color: $based-cyan-6;
-    opacity: 0.5;
-    transition: 1s;
-
+  &:hover,
+  &:focus {
     @media (min-width: $tablet-width) {
-      right: 35px;
-      top: 30px;
+      transform: translateY(-5px);
+    }
+
+    svg {
+      opacity: 0.7;
     }
   }
 
-  &--toys svg {
-    position: absolute;
-    right: 26px;
-    top: 21px;
-    color: $based-cyan-6;
-    opacity: 0.5;
-    transition: 1s;
-
-    @media (min-width: $tablet-width) {
-      right: 35px;
-      top: 30px;
-    }
+  &:active svg {
+    opacity: 0.3;
   }
 
   span {
@@ -177,35 +166,37 @@
 
   &--interior-items {
     background-color: $based-cyan-2;
+
+    svg {
+      position: absolute;
+      right: 35px;
+      top: 23px;
+      color: $based-cyan-6;
+      opacity: 0.5;
+      transition: opacity $transition-fast;
+
+      @media (min-width: $tablet-width) {
+        right: 35px;
+        top: 30px;
+      }
+    }
   }
 
   &--toys {
     background-color: $based-cyan-1;
-  }
-
-  &:hover,
-  &:focus {
-    @media (min-width: $tablet-width) {
-      transform: translateY(-5px);
-      transition: 0.5s;
-
-      .intro__link--interior-items {
-        background-color: $based-cyan-5;
-      }
-
-      .intro__link--toys {
-        background-color: $based-cyan-4;
-      }
-    }
 
     svg {
-      opacity: 0.7;
-      transition: 1s;
-    }
-  }
+      position: absolute;
+      right: 26px;
+      top: 21px;
+      color: $based-cyan-6;
+      opacity: 0.5;
+      transition: opacity $transition-fast;
 
-  &:active svg {
-    opacity: 0.3;
-    transition: 1s;
+      @media (min-width: $tablet-width) {
+        right: 35px;
+        top: 30px;
+      }
+    }
   }
 }
