@@ -43,5 +43,6 @@ orderPopup.addEventListener('click', function (evt) {
 });
 
 // index modal
-
-orderButton.addEventListener('click', (evt) => openPopup(evt));
+if (orderButton) {
+  orderButton.addEventListener('click', (evt) => openPopup(evt));
+}
