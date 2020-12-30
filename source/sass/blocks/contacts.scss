@@ -39,8 +39,8 @@
   }
 
   &:active {
-    color: rgba($based-cyan-4, 0.1);
-    border: none;
+    color: $based-cyan-4;
+    border-bottom: 1px solid rgba($based-cyan-3, 0.1);
   }
 }
 
@@ -126,7 +126,7 @@
     margin-bottom: 30px;
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 30px
+      margin-bottom: 30px;
     }
   }
 
@@ -152,7 +152,7 @@
   margin-bottom: 40px;
 
   iframe {
-    border:none;
+    border: none;
     width: 100%;
     height: 100%;
   }

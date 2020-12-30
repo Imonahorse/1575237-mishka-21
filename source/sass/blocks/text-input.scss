@@ -1,8 +1,25 @@
+.text-input {
+  &--textarea {
+    padding-bottom: 17px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 50px;
+      padding-bottom: 53px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 112px;
+      padding-right: 224px;
+      padding-bottom: 50px;
+    }
+  }
+}
+
 .text-input__input {
   position: relative;
   display: block;
   width: 100%;
-  padding: 16px 50px 13px 0;
+  padding: 16px 50px 13px 18px;
   font-family: inherit;
   border: none;
   border-bottom: 2px solid $black;
@@ -37,8 +54,6 @@
 
     @media (min-width: $tablet-width) {
       font-size: 19px;
-      line-height: 18px;
-      padding: 17px 50px 13px 18px;
     }
   }
 }
@@ -202,28 +217,6 @@
     &--textarea {
       margin-right: 34px;
       font-size: 17px;
-    }
-  }
-}
-
-
-.text-input {
-  &--textarea {
-    padding-bottom: 17px;
-  }
-
-  @media (min-width: $tablet-width) {
-    &--textarea {
-      padding-top: 50px;
-      padding-bottom: 53px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--textarea {
-      padding-left: 112px;
-      padding-right: 224px;
-      padding-bottom: 50px;
     }
   }
 }

@@ -1,202 +1,50 @@
-.intro {
-  background-color: $based-gray-6;
-  border-top: 1px solid $based-gray-5;
-
-  @media (min-width: $tablet-width) {
-    margin-top: -45px;
-    position: relative;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: -75px;
-  }
-
-  &::before {
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      z-index: 2;
-      bottom: -15px;
-      left: 0;
-      height: 24px;
-      width: 100%;
-      background-image: url("../img/big-zigzag-line.svg");
-      background-repeat: repeat-x;
-      background-position: left bottom;
-      background-size: auto 24px;
-
-
-      @media (min-width: $desktop-width) {
-        height: 34px;
-        bottom: -20px;
-        background-size: auto 34px;
-      }
-    }
-  }
-}
-
-.intro__wrapper {
-  position: relative;
-  padding-top: 72px;
-  background-image: url("../../img/intro-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center -17%;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../img/intro-mobile@2x.jpg");
-    background-size: 320px auto;
-    background-position: center -17%;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-top: 155px;
-    background-image: url("../../img/intro-tablet@1x.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/intro-tablet@2x.jpg");
-      background-size: 768px auto;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 157px;
-    background-image: url("../../img/intro-desktop@1x.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/intro-desktop@2x.jpg");
-      background-size: 1150px auto;
-    }
-  }
-}
-
-.intro__slogan {
-  width: 260px;
-  margin: 0 auto 120px auto;
+.intro__title {
+  padding: 73px 0;
+  margin: 0 auto;
   text-align: center;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
+  background-color: $based-gray-3;
 
   @media (min-width: $tablet-width) {
-    width: 668px;
-    margin-bottom: 372px;
+    padding: 101px 0 85px 0;
+    margin: 0 auto;
     font-size: 43px;
     line-height: 50px;
+    background-image: url("../img/big-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: auto 24px;
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
-    margin-bottom: 355px;
+    padding: 102px 0 110px 0;
+    margin: 0 auto;
     font-size: 53px;
     line-height: 57px;
+    background-size: auto 34px;
   }
 }
 
-.intro__list {
-  @include list-reset;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-  }
+.intro__span {
+  display: block;
 }
 
-.intro__item {
-  @media (min-width: $tablet-width) {
-    width: 50%;
-    height: auto;
-
-    .intro__link--interior-items {
-      box-shadow: 0 10px $based-cyan-5;
-    }
-
-    .intro__link--toys {
-      box-shadow: 0 10px $based-cyan-4;
-    }
-  }
-}
-
-.intro__link {
-  position: relative;
-  display: flex;
-  height: 100%;
-  margin: 0 -30px;
-  padding: 24px 0 31px 30px;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 19px;
-  color: $based-gray-1;
-  transition:  transform $transition-fast;
+.intro__description {
+  padding-top: 17px;
+  padding-bottom: 10px;
+  font-size: 13px;
+  color: $based-gray-2;
 
   @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 20px;
+    font-size: 17px;
     line-height: 30px;
-    margin: 0;
-    padding-left: 36px;
-    font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 25px 350px 32px 37px;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  &:hover,
-  &:focus {
-    @media (min-width: $tablet-width) {
-      transform: translateY(-5px);
-    }
-
-    svg {
-      opacity: 0.7;
-    }
-  }
-
-  &:active svg {
-    opacity: 0.3;
-  }
-
-  span {
-    display: block;
-    width: 60%;
-    margin-right: auto;
-  }
-
-  &--interior-items {
-    background-color: $based-cyan-2;
-
-    svg {
-      position: absolute;
-      right: 35px;
-      top: 23px;
-      color: $based-cyan-6;
-      opacity: 0.5;
-      transition: opacity $transition-fast;
-
-      @media (min-width: $tablet-width) {
-        right: 35px;
-        top: 30px;
-      }
-    }
-  }
-
-  &--toys {
-    background-color: $based-cyan-1;
-
-    svg {
-      position: absolute;
-      right: 26px;
-      top: 21px;
-      color: $based-cyan-6;
-      opacity: 0.5;
-      transition: opacity $transition-fast;
-
-      @media (min-width: $tablet-width) {
-        right: 35px;
-        top: 30px;
-      }
-    }
+    padding: 102px 220px 0 225px;
   }
 }
