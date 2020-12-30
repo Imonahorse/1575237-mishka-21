@@ -21,21 +21,21 @@
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translateY(-50%, -2000px);
     opacity: 0;
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translateY(-50%, 30px);
     opacity: 0.7;
   }
 
   90% {
-    transform: translateY(-10px);
+    transform: translateY(-50%, -10px);
     opacity: 1;
   }
 
   100% {
-    transform: translateY(0);
+    transform: translateY(-50%, 0);
   }
 }

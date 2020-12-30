@@ -15,47 +15,36 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-
 // catalog modal
 
-const catalogButton = document.querySelectorAll('.product-card__to-basket');
+const catalogButtons = document.querySelectorAll('.product-card__to-basket');
 const orderButton = document.querySelector('.card__button');
-const modalButton = document.querySelector('.modal__button');
 const orderPopup = document.querySelector('.modal');
+const modalInput = document.querySelector('.modal__input');
 
-for (var i = 0; i < catalogButton.length; i++) {
-  catalogButton[i].addEventListener('click', function (evt) {
-    evt.preventDefault();
-    orderPopup.classList.add('modal--open');
-    console.log('клик')
-  });
+const openPopup = (evt) => {
+  evt.preventDefault();
+  orderPopup.classList.add('modal--close');
+  orderPopup.classList.add('modal--open');
+  modalInput.focus();
 }
 
-orderPopup.addEventListener('click', (evt) => {
+if (catalogButtons) {
+  for (let i = 0; i < catalogButtons.length; i++) {
+    catalogButtons[i].addEventListener('click', (evt) => openPopup(evt));
+  }
+}
+
+orderPopup.addEventListener('click', function (evt) {
   if (evt.target.classList.contains('modal')) {
     orderPopup.classList.remove('modal--open');
     orderPopup.classList.add('modal--close');
   }
 });
 
-modalButton.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  orderPopup.classList.remove('modal--open');
-  orderPopup.classList.add('modal--close');
-});
-
 // index modal
 
-orderButton.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  orderPopup.classList.remove('modal--close');
-  orderPopup.classList.add('modal--open');
-  modalItem.focus();
-});
+orderButton.addEventListener('click', (evt) => openPopup(evt));
 
-modalButton.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  orderPopup.classList.remove('modal--open');
-  orderPopup.classList.add('modal--close');
-});
+
 

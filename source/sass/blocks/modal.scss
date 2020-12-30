@@ -13,8 +13,11 @@
 
   &--open {
     display: block;
-    animation: bounce $transition-fast;
     background-color: rgba($white, 0.9);
+
+    .modal__wrapper {
+      animation: bounce $transition-slow;
+    }
   }
 }
 

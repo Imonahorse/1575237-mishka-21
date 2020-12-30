@@ -39,8 +39,8 @@
   }
 
   &:active {
-    color: rgba($based-cyan-4, 0.1);
-    border: none;
+    color: $based-cyan-4;
+    border-bottom: 1px solid rgba($based-cyan-3, 0.1);
   }
 }
 

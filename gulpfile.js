@@ -1,19 +1,19 @@
-const gulp = require("gulp");
-const plumber = require("gulp-plumber");
-const sourcemap = require("gulp-sourcemaps");
-const sass = require("gulp-sass");
-const postcss = require("gulp-postcss");
-const csso = require("postcss-csso");
-const rename = require("gulp-rename");
-const autoprefixer = require("autoprefixer");
-const htmlmin = require("gulp-htmlmin");
-const uglify = require("gulp-uglify-es").default;
-const imagemin = require("gulp-imagemin");
-const webp = require("gulp-webp");
-const svgstore = require("gulp-svgstore");
-const del = require("del");
-const gulpif = require("gulp-if")
-const sync = require("browser-sync").create();
+const gulp = require('gulp');
+const plumber = require('gulp-plumber');
+const sourcemap = require('gulp-sourcemaps');
+const sass = require('gulp-sass');
+const postcss = require('gulp-postcss');
+const csso = require('postcss-csso');
+const rename = require('gulp-rename');
+const autoprefixer = require('autoprefixer');
+const htmlmin = require('gulp-htmlmin');
+const uglify = require('gulp-uglify-es').default;
+const imagemin = require('gulp-imagemin');
+const webp = require('gulp-webp');
+const svgstore = require('gulp-svgstore');
+const del = require('del');
+const gulpif = require('gulp-if')
+const sync = require('browser-sync').create();
 
 const isProd = process.argv.includes('build');
 
@@ -53,8 +53,8 @@ const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(sourcemap.write("."))
-    .pipe(rename("style.min.css"))
+    .pipe(sourcemap.write('.'))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest(config.dist + config.css.dest))
     .pipe(sync.stream());
 }
@@ -74,7 +74,7 @@ const html = () => {
 const scripts = () => {
   return gulp.src(config.src + config.js.src)
     .pipe(uglify())
-    .pipe(rename("script.min.js"))
+    .pipe(rename('script.min.js'))
     .pipe(gulp.dest(config.dist + config.js.dest))
     .pipe(sync.stream());
 }
@@ -110,7 +110,7 @@ exports.createWebp = createWebp;
 const sprite = () => {
   return gulp.src(config.src + config.img.icons)
     .pipe(svgstore())
-    .pipe(rename("sprite.svg"))
+    .pipe(rename('sprite.svg'))
     .pipe(gulp.dest(config.dist + config.img.dest))
 }
 
@@ -120,8 +120,8 @@ exports.sprite = sprite;
 
 const copy = () => {
   return gulp.src([
-      "source/fonts/*.{woff2,woff}",
-      "source/*.ico"
+      'source/fonts/*.{woff2,woff}',
+      'source/*.ico'
     ],
     {
       base: config.src
