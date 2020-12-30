@@ -19,7 +19,7 @@ const isProd = process.argv.includes('build');
 
 const config = {
   src: './source/',
-  dist: './dist/',
+  dist: './build/',
   html: {
     src: '**/*.html',
     dest: '/'
