@@ -35,12 +35,14 @@ if (catalogButtons) {
   }
 }
 
-orderPopup.addEventListener('click', function (evt) {
-  if (evt.target.classList.contains('modal')) {
-    orderPopup.classList.remove('modal--open');
-    orderPopup.classList.add('modal--close');
-  }
-});
+if (orderPopup) {
+  orderPopup.addEventListener('click', function (evt) {
+    if (evt.target.classList.contains('modal')) {
+      orderPopup.classList.remove('modal--open');
+      orderPopup.classList.add('modal--close');
+    }
+  });
+}
 
 // index modal
 if (orderButton) {
