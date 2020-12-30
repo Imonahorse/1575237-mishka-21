@@ -45,6 +45,3 @@ orderPopup.addEventListener('click', function (evt) {
 // index modal
 
 orderButton.addEventListener('click', (evt) => openPopup(evt));
-
-
-

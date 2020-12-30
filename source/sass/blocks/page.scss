@@ -12,3 +12,16 @@
   font-style: normal;
   color: $black;
 }
+
+.page__index-intro,
+.page__intro {
+  border-top: 1px solid rgba($black, 0.1);
+
+  @media (min-width: $tablet-width) {
+    margin-top: -45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -75px;
+  }
+}

@@ -1,14 +1,8 @@
 .index-intro {
   background-color: $based-gray-6;
-  border-top: 1px solid $based-gray-5;
 
   @media (min-width: $tablet-width) {
-    margin-top: -45px;
     position: relative;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: -75px;
   }
 
   &::before {
@@ -128,7 +122,7 @@
   text-decoration: none;
   font-size: 19px;
   color: $based-gray-1;
-  transition:  transform $transition-fast;
+  transition: transform $transition-fast;
 
   @media (min-width: $tablet-width) {
     line-height: 30px;

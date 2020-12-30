@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="css/style.min.css" as="style">
   <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Мишка</title>
 </head>
@@ -62,7 +63,7 @@
 
 <main class="page-main">
 
-  <section class="index-intro">
+  <section class="page__index-intro index-intro">
     <div class="index-intro__wrapper wrapper">
       <h1 class="visually-hidden">Интернет-магазин милых вещей ручной работы для дома «Мишка»</h1>
       <p class="index-intro__slogan">Милые штуки ручной работы&nbsp;для&nbsp;дома</p>
@@ -114,8 +115,7 @@
           <picture>
             <source media="(min-width:1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
             <source media="(min-width:768px)" srcset="img/triple-set-tablet@1x.jpg 1x,img/triple-set-tablet@2x.jpg 2x">
-            <img class="card__picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
-                 alt="Разноцветные вязанные карзинки ручной работы разных размеров">
+            <img class="card__picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Разноцветные вязанные карзинки ручной работы разных размеров">
           </picture>
         </div>
         <p class="card__price">Цена: 990 руб.</p>
@@ -184,7 +184,7 @@
     <div class="contacts__wrapper wrapper">
       <h2 class="contacts__title">Контакты</h2>
       <dl class="contacts__info">
-        <div class="contact__item contacts__item--email">
+        <div class="contacts__item contacts__item--email">
           <dt class="contacts__term">e-mail:</dt>
           <dd class="contacts__definition">
             <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
@@ -198,7 +198,7 @@
       <div class="contacts__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1609011802371!5m2!1sru!2sru"
-           allowfullscreen="" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          allowfullscreen="" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </iframe>
       </div>
       <a class="contacts__button button button--primary" href="#">Напишите нам</a>
@@ -217,21 +217,21 @@
     </div>
     <ul class="page-footer__social social">
       <li class="social__item">
-        <a class="social-link social__link--instagram" href="https://www.instagram.com/" aria-label="Инстаграм">
+        <a class="social__link social__link--instagram" href="https://www.instagram.com/" aria-label="Инстаграм">
           <svg width="22" height="22" aria-hidden="true">
             <use xlink:href="img/sprite.svg#icon-insta"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a class="social-link social__link--facebook" href="https://www.facebook.com/" aria-label="Фейсбук">
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Фейсбук">
           <svg width="15" height="28" aria-hidden="true">
             <use xlink:href="img/sprite.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a class="social-link social__link--twitter" href="https://www.twitter.com/" aria-label="Твиттер">
+        <a class="social__link social__link--twitter" href="https://www.twitter.com/" aria-label="Твиттер">
           <svg width="23" height="20">
             <use xlink:href="img/sprite.svg#icon-twitter"></use>
           </svg>
@@ -281,7 +281,7 @@
         </label>
         </li>
       </ul>
-      <button class="modal__button button--primary" type="submit">Добавить</button>
+      <button class="modal__button button button--primary" type="submit">Добавить</button>
     </form>
   </div>
 </section>

@@ -27,13 +27,14 @@
 
 .copyright__link {
   color: $black;
+  cursor: pointer;
 
   svg {
     color: $based-cyan-2;
   }
 
   &:hover svg,
-  &:focus svg{
+  &:focus svg {
     color: $based-cyan-4;
   }
 

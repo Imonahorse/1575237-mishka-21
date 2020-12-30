@@ -5,6 +5,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="css/style.min.css" as="style">
   <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Мишка</title>
 
@@ -64,9 +65,10 @@
 
 <main class="page-main">
 
-  <section class="intro">
+  <section class="page__intro intro">
     <h1 class="intro__title">
-     <span class="intro__span wrapper">Каталог товаров</span></h1>
+      <span class="intro__span wrapper">Каталог товаров</span>
+    </h1>
   </section>
 
   <section class="catalog">
@@ -79,8 +81,7 @@
               <picture>
                 <source media="(min-width:1150px)" srcset="img/catalog-1-desktop@1x.jpg 1x, img/catalog-1-desktop@2x.jpg 2x">
                 <source media="(min-width:768px)" srcset="img/catalog-1-tablet@1x.jpg 1x, img/catalog-1-tablet@2x.jpg 2x">
-                <img class="production-card__image-link" src="img/catalog-1-mobile@1x.jpg" srcset="img/catalog-1-mobile@2x.jpg 2x"
-                     alt="Вязанный заяц ручной работы в голубой одежде рядом с мороженным">
+                <img class="production-card__image-link" src="img/catalog-1-mobile@1x.jpg" srcset="img/catalog-1-mobile@2x.jpg 2x" alt="Вязанный заяц ручной работы в голубой одежде рядом с мороженным">
               </picture>
             </a>
             <div class="product-card__wrapper" tabindex="0">
@@ -107,8 +108,7 @@
               <picture>
                 <source media="(min-width:1150px)" srcset="img/catalog-2-desktop@1x.jpg 1x, img/catalog-2-desktop@2x.jpg 2x">
                 <source media="(min-width:768px)" srcset="img/catalog-2-tablet@1x.jpg 1x, img/catalog-2-tablet@2x.jpg 2x">
-                <img class="production-card__image-link" src="img/catalog-2-mobile@1x.jpg" srcset="img/catalog-2-mobile@2x.jpg 2x"
-                     alt="Двухцветная вязаная корзинка для белья ручной работы">
+                <img class="production-card__image-link" src="img/catalog-2-mobile@1x.jpg" srcset="img/catalog-2-mobile@2x.jpg 2x" alt="Двухцветная вязаная корзинка для белья ручной работы">
               </picture>
             </a>
             <div class="product-card__wrapper" tabindex="0">
@@ -135,8 +135,7 @@
               <picture>
                 <source media="(min-width:1150px)" srcset="img/catalog-3-desktop@1x.jpg 1x, img/catalog-3-desktop@2x.jpg 2x">
                 <source media="(min-width:768px)" srcset="img/catalog-3-tablet@1x.jpg 1x, img/catalog-3-tablet@2x.jpg 2x">
-                <img class="production-card__image-link" src="img/catalog-3-mobile@1x.jpg" srcset="img/catalog-3-mobile@2x.jpg 2x"
-                     alt="Большая двухцветная корзинка для игрушек ручной работы">
+                <img class="production-card__image-link" src="img/catalog-3-mobile@1x.jpg" srcset="img/catalog-3-mobile@2x.jpg 2x" alt="Большая двухцветная корзинка для игрушек ручной работы">
               </picture>
             </a>
             <div class="product-card__wrapper" tabindex="0">
@@ -200,21 +199,21 @@
     </div>
     <ul class="page-footer__social social">
       <li class="social__item">
-        <a class="social-link social__link--instagram" href="https://www.instagram.com/" aria-label="Инстаграм">
+        <a class="social__link social__link--instagram" href="https://www.instagram.com/" aria-label="Инстаграм">
           <svg width="22" height="22" aria-hidden="true">
             <use xlink:href="img/sprite.svg#icon-insta"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a class="social-link social__link--facebook" href="https://www.facebook.com/" aria-label="Фейсбук">
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Фейсбук">
           <svg width="15" height="28" aria-hidden="true">
             <use xlink:href="img/sprite.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a class="social-link social__link--twitter" href="https://www.twitter.com/" aria-label="Твиттер">
+        <a class="social__link social__link--twitter" href="https://www.twitter.com/" aria-label="Твиттер">
           <svg width="23" height="20">
             <use xlink:href="img/sprite.svg#icon-twitter"></use>
           </svg>
@@ -264,7 +263,7 @@
         </label>
         </li>
       </ul>
-      <button class="modal__button button--primary" type="submit">Добавить</button>
+      <button class="modal__button button button--primary" type="submit">Добавить</button>
     </form>
   </div>
 </section>
