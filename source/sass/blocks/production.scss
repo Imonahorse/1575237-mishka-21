@@ -48,17 +48,18 @@
 
 .production__icon {
   position: absolute;
-  top: 35px;
+  top: 48%;
   left: 33px;
+  transform: translateY(-50%);
 
   @media (min-width: $tablet-width) {
-    top: 40px;
+    top: 65%;
     left: 40px;
   }
 
   @media (min-width: $desktop-width) {
     left: 0;
-    top: 47px;
+    top: 37%;
   }
 }
 
@@ -108,7 +109,6 @@
 
 .production__player {
   position: relative;
-  height: 150px;
 
   @media (min-width: $tablet-width) {
     order: -1;
@@ -129,6 +129,16 @@
   transform: translate(-50%, -50%);
   cursor: pointer;
   outline: none;
+
+  @media (min-width: $tablet-width) {
+    width: 102px;
+    height: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 76px;
+  }
 
   &:hover {
     transform: translate(-50%, -50%) scale(1.2);
