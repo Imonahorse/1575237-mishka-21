@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Мишка</title>
 </head>
@@ -25,7 +26,7 @@
         </picture>
       </a>
       <ul class="main-nav__site-list site-list">
-        <li class="site-list__item site-list__item-active">
+        <li class="site-list__item">
           <a class="site-list__link" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-list__item">
@@ -235,7 +236,7 @@
       </li>
       <li class="social__item">
         <a class="social__link social__link--twitter" href="https://www.twitter.com/" aria-label="Твиттер">
-          <svg width="23" height="20">
+          <svg width="23" height="20" aria-hidden="true">
             <use xlink:href="img/sprite.svg#icon-twitter"></use>
           </svg>
         </a>
@@ -246,7 +247,7 @@
         <b>Разработано</b>
       </p>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" aria-label="Перейти на сайт Академии">
-        <svg width="27" height="35">
+        <svg width="27" height="35" aria-hidden="true">
           <use xlink:href="img/sprite.svg#icon-academy" aria-hidden="true"></use>
         </svg>
       </a>
