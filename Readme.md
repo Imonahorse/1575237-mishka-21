@@ -3,6 +3,7 @@
 * Студент: [Алексей Иванов](https://up.htmlacademy.ru/adaptive/21/user/1575237).
 * Наставник: [Алексей Хабиров](https://htmlacademy.ru/profile/alex_khab).
 
+* Демо: https://mishka359.netlify.app/
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
